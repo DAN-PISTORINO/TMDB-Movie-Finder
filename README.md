@@ -1,3 +1,6 @@
+The project UI is based on the Ultralight Library.
+Information about this library is found below:
+-----------------------------------------------
 <img src="media/logo.png" width="200">
 <a href='https://ci.ultralig.ht/job/Ultralight/job/master/'><img src='https://ci.ultralig.ht/buildStatus/icon?job=Ultralight%2Fmaster'></a>
 
