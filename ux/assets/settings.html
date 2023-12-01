@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Finder: Settings</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script href="js/bindings.js"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="message">
+            <h1>Settings</h1>
+            <form id="settings">
+                <table>
+                    <tr>
+                        <td><div class="key">API Key:</div></td>
+                        <td>
+                            <input name="api_key" onchange="updateAPIKey()" id="input_api_key" title="input_api_key" value="1857e2cb374e86db84f27a8550dc6e24" /><br />
+                            <small id="userInputHelp" class="form-text text-muted">
+                                * Sign up for a DB access token at <a href="https://www.themoviedb.org/movie">https://www.themoviedb.org/movie</a>
+                            </small>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

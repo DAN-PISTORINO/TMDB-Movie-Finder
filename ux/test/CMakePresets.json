@@ -1,0 +1,49 @@
+{
+	"version": 3,
+	"cmakeMinimumRequired": {
+		"major": 3,
+		"minor": 20,
+		"patch": 0
+	},
+	//"include": [ "list.json", "morethings.json" ],
+	"configurePresets": [
+		{
+			"name": "MovieFinder",
+			"displayName": "Standard Build",
+			"description": "Windows build using VS-17-22 generator",
+			"condition": {
+					"type": "equals",
+					"lhs": "${hostSystemName}",
+					"rhs": "Windows"
+			},
+			"generator": "Visual Studio 17 2022",
+			"binaryDir": "${sourceDir}/build/default",
+			/*"cacheVariables": {
+				"FIRST_CACHE_VARIABLE": {
+					"type": "BOOL",
+					"value": "OFF"
+				},
+				"SECOND_CACHE_VAR": "ON"
+			},*/
+			"environment": {
+				"MY_ENVIRONMENT_VARIABLE": "Test",
+				"PATH": "$env{HOME}/ninja/bin:$penv{PATH}"
+			},
+			"vendor": {
+				"example.com/ExampleIDE/1.0": {
+					"autoFormat": true
+				}
+			}
+		}
+	],
+	"buildPresets": [
+		{
+			"name": "default",
+			"configurePreset": "default",
+			"nativeToolOptions": [
+				"CMAKE_GENERATOR 'Visual Studio 17 2022'",
+				"CMAKE_GENERATOR_PLATFORM=x64"
+			]
+		}
+	]
+}

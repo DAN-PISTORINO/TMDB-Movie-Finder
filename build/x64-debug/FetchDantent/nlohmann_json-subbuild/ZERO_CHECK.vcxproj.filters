@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\FetchDantent\nlohmann_json-subbuild\CMakeFiles\af80e1ac9fef25fa87c13220f47e620b\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{84DBA7D1-BF21-371A-AED1-9C18F04FED8E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

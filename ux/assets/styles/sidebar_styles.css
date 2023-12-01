@@ -1,0 +1,61 @@
+* {
+    -webkit-user-select: none;
+}
+
+body {
+    background: white;
+    color: #7e7f8e;
+    fill: #7e7f8e;
+    font-family: -apple-system, 'Segoe UI', Ubuntu, 'Open Sans', Arial, sans-serif;
+    margin: 8px 0;
+}
+
+#divider {
+    z-index: 100;
+    position: fixed;
+    width: 12px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(90deg, #1a215a44, rgba(0, 0, 35, 0.01));
+}
+
+h3 {
+    margin-top: 24px;
+    margin-left: 20px;
+}
+
+li {
+    list-style-type: none;
+    padding: 0.4em 0;
+    transition: padding 0.12s ease-out;
+    cursor: pointer;
+}
+
+    li:hover {
+        padding-left: 6px;
+        background-color: #437ff821;
+        color: #537cd2;
+        fill: #537cd2;
+    }
+
+    li.disabled {
+    }
+
+    li.active {
+        border-left: 6px solid #5088fb;
+    }
+
+li svg {
+    margin-bottom: -0.1em;
+    margin-right: 0.5em;
+    margin-left: 20px;
+}
+
+li.active svg {
+    margin-left: 14px;
+}
+
+ul {
+    padding-left: 0em;
+}

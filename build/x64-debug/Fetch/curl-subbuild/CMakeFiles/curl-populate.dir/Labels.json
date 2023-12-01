@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-subbuild/CMakeFiles/curl-populate"
+		},
+		{
+			"file" : "D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-subbuild/CMakeFiles/65887c73031cc5b42e078d286411380f/curl-populate.rule"
+		},
+		{
+			"file" : "D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-subbuild/CMakeFiles/d2d118b552c95db03bd60043167fb357/curl-populate-complete.rule"
+		},
+		{
+			"file" : "D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-subbuild/CMakeFiles/1d0b714e8939187e09b95410ef672edc/curl-populate-build.rule"
+		},
+		{
+			"file" : "D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-subbuild/CMakeFiles/1d0b714e8939187e09b95410ef672edc/curl-populate-configure.rule"
+		},
+		{
+			"file" : "D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-subbuild/CMakeFiles/1d0b714e8939187e09b95410ef672edc/curl-populate-download.rule"
+		},
+		{
+			"file" : "D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-subbuild/CMakeFiles/1d0b714e8939187e09b95410ef672edc/curl-populate-install.rule"
+		},
+		{
+			"file" : "D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-subbuild/CMakeFiles/1d0b714e8939187e09b95410ef672edc/curl-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-subbuild/CMakeFiles/1d0b714e8939187e09b95410ef672edc/curl-populate-patch.rule"
+		},
+		{
+			"file" : "D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-subbuild/CMakeFiles/1d0b714e8939187e09b95410ef672edc/curl-populate-test.rule"
+		},
+		{
+			"file" : "D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-subbuild/CMakeFiles/1d0b714e8939187e09b95410ef672edc/curl-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"curl-populate"
+		],
+		"name" : "curl-populate"
+	}
+}

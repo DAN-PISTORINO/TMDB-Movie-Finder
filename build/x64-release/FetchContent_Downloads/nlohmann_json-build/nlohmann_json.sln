@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CMakePredefinedTargets", "CMakePredefinedTargets", "{5DF9D744-2BDC-3681-9CB6-247CADDC6E40}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALL_BUILD", "ALL_BUILD.vcxproj", "{BBEDF807-CADA-319E-8C00-7C610C5E81DE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6E8E6145-777C-3D85-A34D-E63DE8BFCD46} = {6E8E6145-777C-3D85-A34D-E63DE8BFCD46}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "..\..\\ZERO_CHECK.vcxproj", "{6E8E6145-777C-3D85-A34D-E63DE8BFCD46}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+		MinSizeRel|x64 = MinSizeRel|x64
+		RelWithDebInfo|x64 = RelWithDebInfo|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBEDF807-CADA-319E-8C00-7C610C5E81DE}.Debug|x64.ActiveCfg = Debug|x64
+		{BBEDF807-CADA-319E-8C00-7C610C5E81DE}.Release|x64.ActiveCfg = Release|x64
+		{BBEDF807-CADA-319E-8C00-7C610C5E81DE}.MinSizeRel|x64.ActiveCfg = MinSizeRel|x64
+		{BBEDF807-CADA-319E-8C00-7C610C5E81DE}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
+		{6E8E6145-777C-3D85-A34D-E63DE8BFCD46}.Debug|x64.ActiveCfg = Debug|x64
+		{6E8E6145-777C-3D85-A34D-E63DE8BFCD46}.Debug|x64.Build.0 = Debug|x64
+		{6E8E6145-777C-3D85-A34D-E63DE8BFCD46}.Release|x64.ActiveCfg = Release|x64
+		{6E8E6145-777C-3D85-A34D-E63DE8BFCD46}.Release|x64.Build.0 = Release|x64
+		{6E8E6145-777C-3D85-A34D-E63DE8BFCD46}.MinSizeRel|x64.ActiveCfg = MinSizeRel|x64
+		{6E8E6145-777C-3D85-A34D-E63DE8BFCD46}.MinSizeRel|x64.Build.0 = MinSizeRel|x64
+		{6E8E6145-777C-3D85-A34D-E63DE8BFCD46}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
+		{6E8E6145-777C-3D85-A34D-E63DE8BFCD46}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BBEDF807-CADA-319E-8C00-7C610C5E81DE} = {5DF9D744-2BDC-3681-9CB6-247CADDC6E40}
+		{6E8E6145-777C-3D85-A34D-E63DE8BFCD46} = {5DF9D744-2BDC-3681-9CB6-247CADDC6E40}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3F136FC-11B3-392A-8C48-79B67154B869}
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

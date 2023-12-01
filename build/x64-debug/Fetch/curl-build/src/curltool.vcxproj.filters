@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\slist_wc.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_binmode.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_bname.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_cb_dbg.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_cb_hdr.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_cb_prg.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_cb_rea.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_cb_see.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_cb_wrt.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_cfgable.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_dirhie.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_doswin.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_easysrc.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_filetime.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_findfile.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_formparse.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_getparam.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_getpass.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_help.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_helpers.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\src\tool_hugehelp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_libinfo.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_listhelp.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_main.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_msgs.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_operate.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_operhlp.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_paramhlp.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_parsecfg.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_progress.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_setopt.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_sleep.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_stderr.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_strdup.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_urlglob.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_util.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_vms.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_writeout.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_writeout_json.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_xattr.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\var.c">
+      <Filter>curl source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\lib\base64.c">
+      <Filter>curlX source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\lib\dynbuf.c">
+      <Filter>curlX source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\slist_wc.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_binmode.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_bname.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_cb_dbg.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_cb_hdr.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_cb_prg.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_cb_rea.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_cb_see.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_cb_wrt.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_cfgable.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_dirhie.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_doswin.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_easysrc.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_filetime.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_findfile.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_formparse.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_getparam.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_getpass.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_help.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_helpers.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_hugehelp.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_libinfo.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_main.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_msgs.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_operate.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_operhlp.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_paramhlp.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_parsecfg.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_progress.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_sdecls.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_setopt.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_setup.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_sleep.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_stderr.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_strdup.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_urlglob.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_util.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_version.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_vms.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_writeout.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_writeout_json.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\tool_xattr.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\var.h">
+      <Filter>curl header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\CMakeFiles\b85bfa9fb50dbddc832996edaf56d54a\tool_hugehelp.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\src\curl.rc">
+      <Filter>curl source files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{938783BA-BD0A-3C46-BE1F-DF5D831F2BD6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{65AF4F97-C8AF-345F-8F38-2BC31112A3C8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="curl header files">
+      <UniqueIdentifier>{4DFFA552-794D-32CA-9D4B-C42E7A3B17F9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="curl source files">
+      <UniqueIdentifier>{2AC326CF-20EF-3008-96E0-F914D1169E6F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="curlX source files">
+      <UniqueIdentifier>{FC185487-DB80-33E7-83D5-7F4C014C66BB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

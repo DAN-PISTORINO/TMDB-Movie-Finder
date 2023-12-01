@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C20A0349-237D-3F24-BF1A-6E1C8E69351D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\temp\OLD\ult3\ux\..\include;D:\temp\OLD\ult3\build\x64-debug\FetchDantent\nlohmann_json-src;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\temp\OLD\ult3\ux\..\include;D:\temp\OLD\ult3\build\x64-debug\FetchDantent\nlohmann_json-src;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\temp\OLD\ult3\ux\..\include;D:\temp\OLD\ult3\build\x64-debug\FetchDantent\nlohmann_json-src;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\temp\OLD\ult3\ux\..\include;D:\temp\OLD\ult3\build\x64-debug\FetchDantent\nlohmann_json-src;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\msys64\mingw64\bin\cmake.exe -SD:/temp/OLD/ult3 -BD:/temp/OLD/ult3/build/x64-debug --check-stamp-file D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\msys64\mingw64\share\cmake\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\msys64\mingw64\share\cmake\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDependentOption.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakePackageConfigHelpers.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakePushCheckState.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckCCompilerFlag.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckCSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckCSourceRuns.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckCXXSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckFunctionExists.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckIncludeFile.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckIncludeFileCXX.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckIncludeFiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckLibraryExists.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckStructHasMember.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckSymbolExists.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckTypeSize.cmake;C:\msys64\mingw64\share\cmake\Modules\FindCygwin.cmake;C:\msys64\mingw64\share\cmake\Modules\FindMsys.cmake;C:\msys64\mingw64\share\cmake\Modules\FindPackageHandleStandardArgs.cmake;C:\msys64\mingw64\share\cmake\Modules\FindPackageMessage.cmake;C:\msys64\mingw64\share\cmake\Modules\FindPerl.cmake;C:\msys64\mingw64\share\cmake\Modules\FindThreads.cmake;C:\msys64\mingw64\share\cmake\Modules\FindZLIB.cmake;C:\msys64\mingw64\share\cmake\Modules\GNUInstallDirs.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CheckCompilerFlag.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CheckFlagCommonConfig.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CheckSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CheckSourceRuns.cmake;C:\msys64\mingw64\share\cmake\Modules\SelectLibraryConfigurations.cmake;C:\msys64\mingw64\share\cmake\Modules\WriteBasicConfigVersionFile.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\CurlSymbolHiding.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\CurlTests.c;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\FindLibPSL.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\FindLibSSH2.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\Macros.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\OtherTests.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\PickyWarnings.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\Platforms\WindowsCache.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\Utilities.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\cmake_uninstall.cmake.in;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\curl-config.cmake.in;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\curl-config.in;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\libcurl.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\msys64\mingw64\bin\cmake.exe -SD:/temp/OLD/ult3 -BD:/temp/OLD/ult3/build/x64-debug --check-stamp-file D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\msys64\mingw64\share\cmake\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\msys64\mingw64\share\cmake\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDependentOption.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakePackageConfigHelpers.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakePushCheckState.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckCCompilerFlag.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckCSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckCSourceRuns.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckCXXSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckFunctionExists.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckIncludeFile.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckIncludeFileCXX.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckIncludeFiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckLibraryExists.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckStructHasMember.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckSymbolExists.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckTypeSize.cmake;C:\msys64\mingw64\share\cmake\Modules\FindCygwin.cmake;C:\msys64\mingw64\share\cmake\Modules\FindMsys.cmake;C:\msys64\mingw64\share\cmake\Modules\FindPackageHandleStandardArgs.cmake;C:\msys64\mingw64\share\cmake\Modules\FindPackageMessage.cmake;C:\msys64\mingw64\share\cmake\Modules\FindPerl.cmake;C:\msys64\mingw64\share\cmake\Modules\FindThreads.cmake;C:\msys64\mingw64\share\cmake\Modules\FindZLIB.cmake;C:\msys64\mingw64\share\cmake\Modules\GNUInstallDirs.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CheckCompilerFlag.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CheckFlagCommonConfig.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CheckSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CheckSourceRuns.cmake;C:\msys64\mingw64\share\cmake\Modules\SelectLibraryConfigurations.cmake;C:\msys64\mingw64\share\cmake\Modules\WriteBasicConfigVersionFile.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\CurlSymbolHiding.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\CurlTests.c;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\FindLibPSL.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\FindLibSSH2.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\Macros.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\OtherTests.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\PickyWarnings.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\Platforms\WindowsCache.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\Utilities.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\cmake_uninstall.cmake.in;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\curl-config.cmake.in;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\curl-config.in;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\libcurl.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\msys64\mingw64\bin\cmake.exe -SD:/temp/OLD/ult3 -BD:/temp/OLD/ult3/build/x64-debug --check-stamp-file D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\msys64\mingw64\share\cmake\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\msys64\mingw64\share\cmake\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDependentOption.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakePackageConfigHelpers.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakePushCheckState.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckCCompilerFlag.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckCSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckCSourceRuns.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckCXXSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckFunctionExists.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckIncludeFile.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckIncludeFileCXX.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckIncludeFiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckLibraryExists.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckStructHasMember.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckSymbolExists.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckTypeSize.cmake;C:\msys64\mingw64\share\cmake\Modules\FindCygwin.cmake;C:\msys64\mingw64\share\cmake\Modules\FindMsys.cmake;C:\msys64\mingw64\share\cmake\Modules\FindPackageHandleStandardArgs.cmake;C:\msys64\mingw64\share\cmake\Modules\FindPackageMessage.cmake;C:\msys64\mingw64\share\cmake\Modules\FindPerl.cmake;C:\msys64\mingw64\share\cmake\Modules\FindThreads.cmake;C:\msys64\mingw64\share\cmake\Modules\FindZLIB.cmake;C:\msys64\mingw64\share\cmake\Modules\GNUInstallDirs.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CheckCompilerFlag.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CheckFlagCommonConfig.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CheckSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CheckSourceRuns.cmake;C:\msys64\mingw64\share\cmake\Modules\SelectLibraryConfigurations.cmake;C:\msys64\mingw64\share\cmake\Modules\WriteBasicConfigVersionFile.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\CurlSymbolHiding.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\CurlTests.c;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\FindLibPSL.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\FindLibSSH2.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\Macros.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\OtherTests.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\PickyWarnings.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\Platforms\WindowsCache.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\Utilities.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\cmake_uninstall.cmake.in;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\curl-config.cmake.in;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\curl-config.in;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\libcurl.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\msys64\mingw64\bin\cmake.exe -SD:/temp/OLD/ult3 -BD:/temp/OLD/ult3/build/x64-debug --check-stamp-file D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\msys64\mingw64\share\cmake\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\msys64\mingw64\share\cmake\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDependentOption.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakePackageConfigHelpers.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakePushCheckState.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckCCompilerFlag.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckCSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckCSourceRuns.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckCXXSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckFunctionExists.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckIncludeFile.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckIncludeFileCXX.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckIncludeFiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckLibraryExists.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckStructHasMember.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckSymbolExists.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckTypeSize.cmake;C:\msys64\mingw64\share\cmake\Modules\FindCygwin.cmake;C:\msys64\mingw64\share\cmake\Modules\FindMsys.cmake;C:\msys64\mingw64\share\cmake\Modules\FindPackageHandleStandardArgs.cmake;C:\msys64\mingw64\share\cmake\Modules\FindPackageMessage.cmake;C:\msys64\mingw64\share\cmake\Modules\FindPerl.cmake;C:\msys64\mingw64\share\cmake\Modules\FindThreads.cmake;C:\msys64\mingw64\share\cmake\Modules\FindZLIB.cmake;C:\msys64\mingw64\share\cmake\Modules\GNUInstallDirs.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CheckCompilerFlag.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CheckFlagCommonConfig.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CheckSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CheckSourceRuns.cmake;C:\msys64\mingw64\share\cmake\Modules\SelectLibraryConfigurations.cmake;C:\msys64\mingw64\share\cmake\Modules\WriteBasicConfigVersionFile.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\CurlSymbolHiding.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\CurlTests.c;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\FindLibPSL.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\FindLibSSH2.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\Macros.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\OtherTests.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\PickyWarnings.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\Platforms\WindowsCache.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\Utilities.cmake;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\cmake_uninstall.cmake.in;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\CMake\curl-config.cmake.in;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\curl-config.in;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\libcurl.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\ZERO_CHECK.vcxproj">
+      <Project>{C43A9539-F99E-3609-B5B5-2F7FF6A75F2C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\src\curl.vcxproj">
+      <Project>{5FDEEF62-7246-3A60-B401-8CBD154F01B6}</Project>
+      <Name>curl</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\lib\libcurl_object.vcxproj">
+      <Project>{04C5E8EF-41ED-3F7F-A170-85B89C269C39}</Project>
+      <Name>libcurl_object</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\lib\libcurl_shared.vcxproj">
+      <Project>{1249D2C7-D1C0-32E6-BA27-69F8FB2FEA8E}</Project>
+      <Name>libcurl_shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

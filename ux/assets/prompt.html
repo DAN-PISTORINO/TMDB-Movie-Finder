@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Key Request</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="text-center">API Key Required</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="userInput">Enter your API Key:</label>
+                        <input type="text" class="form-control" id="userInput" aria-describedby="userInputHelp"
+                               value="1857e2cb374e86db84f27a8550dc6e24">
+                        <small id="userInputHelp" class="form-text text-muted">
+                            Please register for a TMDB account (<a href="https://www.themoviedb.org/signup">signup here</a>),<br /> 
+                            and then create an API key. API keys are found on<br />
+                            the TMDB website under Settings->API.<br />
+                            The default key is provided for debugging purposes only.
+                        </small>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/prompt.js"></script>
+</body>
+</html>

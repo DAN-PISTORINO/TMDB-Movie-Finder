@@ -1,0 +1,38 @@
+{
+  "configurations": [
+    {
+      "name": "x64-Debug",
+      "intelliSenseMode": "windows-clang-x64",
+      "includePath": [
+        "${env.INCLUDE}",
+        "c:/msys64/mingw64/include",
+        "D:\\temp\\OLD\\ult3\\ux\\src",
+        "D:\\temp\\OLD\\ult3\\Libraries\\curl\\include",
+        "D:\\temp\\OLD\\ult3\\Libraries\\json\\include",
+        "D:\\temp\\OLD\\ult3\\include"
+      ],
+      "defines": [
+        "NDEBUG",
+        "_DEBUG"
+      ]
+    },
+    {
+      "name": "x64-Release",
+      "intelliSenseMode": "windows-clang-x64",
+      "includePath": [
+        "${env.INCLUDE}",
+        "c:/msys64/mingw64/include",
+        "D:\\temp\\OLD\\ult3\\ux\\src",
+        "D:\\temp\\OLD\\ult3\\Libraries\\curl\\include",
+        "D:\\temp\\OLD\\ult3\\Libraries\\json\\include",
+        "D:\\temp\\OLD\\ult3\\include"
+      ],
+      "defines": [
+        "NDEBUG",
+        "_RELEASE"
+      ]
+    }
+  ]
+}
+
+

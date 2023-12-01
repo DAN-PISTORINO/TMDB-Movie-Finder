@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-subbuild\CMakeFiles\1d0b714e8939187e09b95410ef672edc\curl-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-subbuild\CMakeFiles\1d0b714e8939187e09b95410ef672edc\curl-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-subbuild\CMakeFiles\1d0b714e8939187e09b95410ef672edc\curl-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-subbuild\CMakeFiles\1d0b714e8939187e09b95410ef672edc\curl-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-subbuild\CMakeFiles\1d0b714e8939187e09b95410ef672edc\curl-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-subbuild\CMakeFiles\1d0b714e8939187e09b95410ef672edc\curl-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-subbuild\CMakeFiles\1d0b714e8939187e09b95410ef672edc\curl-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-subbuild\CMakeFiles\1d0b714e8939187e09b95410ef672edc\curl-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-subbuild\CMakeFiles\d2d118b552c95db03bd60043167fb357\curl-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-subbuild\CMakeFiles\65887c73031cc5b42e078d286411380f\curl-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-subbuild\CMakeFiles\curl-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1E81AD8B-77F8-3345-BCB0-F0FA81FE8D86}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

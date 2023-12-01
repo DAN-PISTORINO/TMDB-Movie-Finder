@@ -1,0 +1,1117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{562F4508-6A9A-3165-BCDE-1AF1DCE519BF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>testdeps</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\temp\OLD\ult3\ux\..\include;D:\temp\OLD\ult3\build\x64-debug\FetchDantent\nlohmann_json-src;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\temp\OLD\ult3\ux\..\include;D:\temp\OLD\ult3\build\x64-debug\FetchDantent\nlohmann_json-src;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\temp\OLD\ult3\ux\..\include;D:\temp\OLD\ult3\build\x64-debug\FetchDantent\nlohmann_json-src;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\temp\OLD\ult3\ux\..\include;D:\temp\OLD\ult3\build\x64-debug\FetchDantent\nlohmann_json-src;D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-src\tests\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-src/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\msys64\mingw64\bin\cmake.exe -SD:/temp/OLD/ult3 -BD:/temp/OLD/ult3/build/x64-debug --check-stamp-file D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-build/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-src/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\msys64\mingw64\bin\cmake.exe -SD:/temp/OLD/ult3 -BD:/temp/OLD/ult3/build/x64-debug --check-stamp-file D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-build/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-src/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\msys64\mingw64\bin\cmake.exe -SD:/temp/OLD/ult3 -BD:/temp/OLD/ult3/build/x64-debug --check-stamp-file D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-build/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-src/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\msys64\mingw64\bin\cmake.exe -SD:/temp/OLD/ult3 -BD:/temp/OLD/ult3/build/x64-debug --check-stamp-file D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-build/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\ZERO_CHECK.vcxproj">
+      <Project>{C43A9539-F99E-3609-B5B5-2F7FF6A75F2C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\chkhostname.vcxproj">
+      <Project>{C2760883-9DD6-335B-90A9-C116E31D2D5D}</Project>
+      <Name>chkhostname</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\server\disabled.vcxproj">
+      <Project>{3FC894EE-713E-3009-B9E0-0BDC81A66362}</Project>
+      <Name>disabled</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\server\fake_ntlm.vcxproj">
+      <Project>{9FD60867-D897-3CE6-9F89-AD45E3FB5DC7}</Project>
+      <Name>fake_ntlm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\server\getpart.vcxproj">
+      <Project>{7B7EFAE3-5E4A-3FB3-B713-3BF6DFFE7599}</Project>
+      <Name>getpart</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1156.vcxproj">
+      <Project>{85710D9A-56D1-3036-8446-AFBB93E37C49}</Project>
+      <Name>lib1156</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1301.vcxproj">
+      <Project>{6C974EC9-ED44-3B54-816F-8D6C381B2650}</Project>
+      <Name>lib1301</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1500.vcxproj">
+      <Project>{A2F23822-85A4-3931-AEE8-F8F2451D7226}</Project>
+      <Name>lib1500</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1501.vcxproj">
+      <Project>{9CD9E4E0-39D2-348F-A0A0-D5378EF80358}</Project>
+      <Name>lib1501</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1502.vcxproj">
+      <Project>{B9BF4BD8-2FFB-3E94-BB4E-DA4BA5AD7949}</Project>
+      <Name>lib1502</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1503.vcxproj">
+      <Project>{E8F81CE7-D492-3614-B9B8-8C8CF5463FFC}</Project>
+      <Name>lib1503</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1504.vcxproj">
+      <Project>{0840551C-AB8B-3E85-AD38-6809C0AA8400}</Project>
+      <Name>lib1504</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1505.vcxproj">
+      <Project>{1724F293-9D9A-3426-BD8D-1A5E80B6E772}</Project>
+      <Name>lib1505</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1506.vcxproj">
+      <Project>{16CD329E-482D-3FA9-A4B6-66F366D805E0}</Project>
+      <Name>lib1506</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1507.vcxproj">
+      <Project>{178093D0-8985-3550-A73B-C385372E06E5}</Project>
+      <Name>lib1507</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1508.vcxproj">
+      <Project>{8BF5DD3F-535F-36B6-9CEB-8AC8CBFAFFD2}</Project>
+      <Name>lib1508</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1509.vcxproj">
+      <Project>{2B11A45A-E783-35CC-A690-9DA74F11DC19}</Project>
+      <Name>lib1509</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1510.vcxproj">
+      <Project>{1DE62DE5-3C52-300D-B39B-2CCA79E40FCE}</Project>
+      <Name>lib1510</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1511.vcxproj">
+      <Project>{67617AEE-DD97-3327-ABF7-269FAC1F0D8C}</Project>
+      <Name>lib1511</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1512.vcxproj">
+      <Project>{C34CA456-72D4-3C77-A106-FE09A270BDD9}</Project>
+      <Name>lib1512</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1513.vcxproj">
+      <Project>{04AB7EAD-2E98-3CF3-842F-95CFEE13FC8B}</Project>
+      <Name>lib1513</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1514.vcxproj">
+      <Project>{1E03D2F2-D0CE-3A5F-AC3B-44986B1BC399}</Project>
+      <Name>lib1514</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1515.vcxproj">
+      <Project>{B17F6001-3604-39FF-BFC0-EAD41388D6F0}</Project>
+      <Name>lib1515</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1517.vcxproj">
+      <Project>{3C82CE81-B5C6-3721-A529-1C6056D56C38}</Project>
+      <Name>lib1517</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1518.vcxproj">
+      <Project>{72B1E4C7-9E92-3E5E-9CF3-622172883BBA}</Project>
+      <Name>lib1518</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1520.vcxproj">
+      <Project>{5CBB8641-7442-3E93-9128-2300223DF80D}</Project>
+      <Name>lib1520</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1521.vcxproj">
+      <Project>{7B6AFBB6-C36D-3619-9C9E-27A909D7680C}</Project>
+      <Name>lib1521</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1522.vcxproj">
+      <Project>{35743680-9867-3DF2-A3B8-FD50B64D3093}</Project>
+      <Name>lib1522</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1523.vcxproj">
+      <Project>{23CB0AA1-F27C-3F99-ADDE-4B26904A129C}</Project>
+      <Name>lib1523</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1525.vcxproj">
+      <Project>{99F82616-1B07-3225-839D-5CEED6CD6EC8}</Project>
+      <Name>lib1525</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1526.vcxproj">
+      <Project>{4EDAC7FA-43F8-3522-B4F1-4326DA343AB3}</Project>
+      <Name>lib1526</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1527.vcxproj">
+      <Project>{5E13B9FE-C255-3699-9682-E962B02D2503}</Project>
+      <Name>lib1527</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1528.vcxproj">
+      <Project>{4EC273EF-3B03-3DF9-9CA8-F3D391A22A19}</Project>
+      <Name>lib1528</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1529.vcxproj">
+      <Project>{8CDE9ABB-6F94-3B27-85C1-373A2842DE92}</Project>
+      <Name>lib1529</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1530.vcxproj">
+      <Project>{ED4C9A43-F776-3B9E-A0AF-5891A6AA9892}</Project>
+      <Name>lib1530</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1531.vcxproj">
+      <Project>{AA402CBD-24CE-366F-BC49-7F6A7D3349F1}</Project>
+      <Name>lib1531</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1532.vcxproj">
+      <Project>{10ED8E94-3CBD-346B-BE08-575955985699}</Project>
+      <Name>lib1532</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1533.vcxproj">
+      <Project>{AAEEA40B-FB16-33BC-B66D-F3211D8D2E13}</Project>
+      <Name>lib1533</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1534.vcxproj">
+      <Project>{BBA24332-1A9C-3285-BFC9-4F7CFFF146A8}</Project>
+      <Name>lib1534</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1535.vcxproj">
+      <Project>{E9945018-9C4E-39F0-9009-09A16CE2EC0C}</Project>
+      <Name>lib1535</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1536.vcxproj">
+      <Project>{D414C5FF-3996-31A3-A5FE-C1F27F5D5D60}</Project>
+      <Name>lib1536</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1537.vcxproj">
+      <Project>{3CEE24F5-6EEB-33F8-94D7-6A14F8D25E17}</Project>
+      <Name>lib1537</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1538.vcxproj">
+      <Project>{4414FF33-B6E5-3B42-8B9E-316BE70CB479}</Project>
+      <Name>lib1538</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1539.vcxproj">
+      <Project>{ACA03E0C-653A-3013-8C9A-79103473ABE4}</Project>
+      <Name>lib1539</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1540.vcxproj">
+      <Project>{65302C44-DEAF-32E3-8A92-C421D847AD79}</Project>
+      <Name>lib1540</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1542.vcxproj">
+      <Project>{DB42BAE1-B9F2-36CF-A7D5-B9AE1411EA53}</Project>
+      <Name>lib1542</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1543.vcxproj">
+      <Project>{A9DE7E5E-1AD3-37F6-85E8-2A2CD1BF0566}</Project>
+      <Name>lib1543</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1550.vcxproj">
+      <Project>{68A64C4D-F98E-37CA-833C-CCF14824E678}</Project>
+      <Name>lib1550</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1551.vcxproj">
+      <Project>{174F5029-4B02-3869-A125-D30681C8976D}</Project>
+      <Name>lib1551</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1552.vcxproj">
+      <Project>{8450274F-484F-33F1-86AA-5BAFF687A2B5}</Project>
+      <Name>lib1552</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1553.vcxproj">
+      <Project>{AC6827F4-0C0D-3C1B-8406-FE30AE5969B6}</Project>
+      <Name>lib1553</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1554.vcxproj">
+      <Project>{047CEE9B-7629-3FF0-961F-27F1EC6C439A}</Project>
+      <Name>lib1554</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1555.vcxproj">
+      <Project>{186D6C4E-1B4C-3EE5-91B1-A354B3A30AFA}</Project>
+      <Name>lib1555</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1556.vcxproj">
+      <Project>{AEBA05B6-7375-34AA-8945-129E9AC91FBB}</Project>
+      <Name>lib1556</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1557.vcxproj">
+      <Project>{A9C6E7FC-CEBC-3DEE-B2E7-F7F17EB58534}</Project>
+      <Name>lib1557</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1558.vcxproj">
+      <Project>{0D53F572-1660-38D2-985B-36A7651E2ED5}</Project>
+      <Name>lib1558</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1559.vcxproj">
+      <Project>{22012A97-1B46-362F-A957-ABF46F865A45}</Project>
+      <Name>lib1559</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1560.vcxproj">
+      <Project>{D596BFEE-FC1A-3534-BC2C-7FE2E5C66383}</Project>
+      <Name>lib1560</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1564.vcxproj">
+      <Project>{6652AB86-97A1-3220-84C8-083683E7993C}</Project>
+      <Name>lib1564</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1565.vcxproj">
+      <Project>{6AD68EEE-373A-3160-8A65-0A6E7A73B7DD}</Project>
+      <Name>lib1565</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1567.vcxproj">
+      <Project>{D42D1A2A-EEFE-3BD9-AC15-2B5C0E1624F0}</Project>
+      <Name>lib1567</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1568.vcxproj">
+      <Project>{AF657A2D-AE0F-3EE4-8789-A000EB809853}</Project>
+      <Name>lib1568</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1569.vcxproj">
+      <Project>{EC62C788-3A06-33A0-8099-46E2C941F577}</Project>
+      <Name>lib1569</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1591.vcxproj">
+      <Project>{ECB5787D-DDC0-36FA-9072-9DC5A69A24DC}</Project>
+      <Name>lib1591</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1592.vcxproj">
+      <Project>{1F847991-F46D-3234-B2BC-72ECE1741F4C}</Project>
+      <Name>lib1592</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1593.vcxproj">
+      <Project>{DD9A9BCB-3DCD-3806-AF9B-0837E6C3E9B8}</Project>
+      <Name>lib1593</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1594.vcxproj">
+      <Project>{E530F723-6ACD-33FA-8925-5B523B2DC75B}</Project>
+      <Name>lib1594</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1596.vcxproj">
+      <Project>{4611FFAE-85DB-31BE-A023-7DC27E5C96C8}</Project>
+      <Name>lib1596</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1597.vcxproj">
+      <Project>{59EFB202-0A90-382A-B10E-8B2E8EA80D97}</Project>
+      <Name>lib1597</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1662.vcxproj">
+      <Project>{29941F33-FB4C-34D4-A194-D8A930157D49}</Project>
+      <Name>lib1662</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1903.vcxproj">
+      <Project>{F62F13F5-A6FD-32FF-9102-64CD2899582F}</Project>
+      <Name>lib1903</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1905.vcxproj">
+      <Project>{6D6BFF1C-8D05-30E1-BF94-4FC042E18AF0}</Project>
+      <Name>lib1905</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1906.vcxproj">
+      <Project>{436C62E7-0377-3796-AB9B-CD1FDDF92A41}</Project>
+      <Name>lib1906</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1907.vcxproj">
+      <Project>{75A373B1-605B-390F-AA99-D7C5C0AEC332}</Project>
+      <Name>lib1907</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1908.vcxproj">
+      <Project>{8B6060E2-871B-3815-BA27-94D74CCA41E7}</Project>
+      <Name>lib1908</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1910.vcxproj">
+      <Project>{BCD50526-A85E-3850-BA21-F87DACF9EAD8}</Project>
+      <Name>lib1910</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1911.vcxproj">
+      <Project>{9471247E-32A3-36F5-9813-38AA101FD113}</Project>
+      <Name>lib1911</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1912.vcxproj">
+      <Project>{BB4E8527-BCB1-39C2-A746-66C8B44B55D9}</Project>
+      <Name>lib1912</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1913.vcxproj">
+      <Project>{659D2694-4357-39C4-B5EA-5D7EB4DB6E73}</Project>
+      <Name>lib1913</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1915.vcxproj">
+      <Project>{9E061706-4FD6-3534-8CC8-AF39D778426C}</Project>
+      <Name>lib1915</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1916.vcxproj">
+      <Project>{FD44B5B2-2399-3F45-AD64-E5DA6EC36C2E}</Project>
+      <Name>lib1916</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1917.vcxproj">
+      <Project>{A3A320B3-19AD-3DFD-B149-A46285B3AA28}</Project>
+      <Name>lib1917</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1918.vcxproj">
+      <Project>{8B7D226A-995C-366B-B56C-74D03C47B0FB}</Project>
+      <Name>lib1918</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1919.vcxproj">
+      <Project>{15497DD3-C3C1-3BCB-A4B6-046133483585}</Project>
+      <Name>lib1919</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1933.vcxproj">
+      <Project>{7DBDC328-C006-32E4-B268-61D4B649BBF6}</Project>
+      <Name>lib1933</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1934.vcxproj">
+      <Project>{55917105-8EF7-38E4-89C3-34C8DB276540}</Project>
+      <Name>lib1934</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1935.vcxproj">
+      <Project>{2977756E-3365-3E5C-A03D-B1A55C4E7B60}</Project>
+      <Name>lib1935</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1936.vcxproj">
+      <Project>{23BBB382-591F-3AD3-ACC6-623BBCB63777}</Project>
+      <Name>lib1936</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1937.vcxproj">
+      <Project>{42DD6916-719A-397F-96FB-C2AB63E793C9}</Project>
+      <Name>lib1937</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1938.vcxproj">
+      <Project>{6924E676-3771-33DD-B1D9-1CE70EDE1DF5}</Project>
+      <Name>lib1938</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1939.vcxproj">
+      <Project>{DEDF4A2B-9344-34A0-8E8D-9A3DF349DD72}</Project>
+      <Name>lib1939</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1940.vcxproj">
+      <Project>{5C5E2870-2CAE-3A48-80FF-D2E24D879EF6}</Project>
+      <Name>lib1940</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1945.vcxproj">
+      <Project>{E2EAB245-0F53-3A54-9276-A31AA54343BC}</Project>
+      <Name>lib1945</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1946.vcxproj">
+      <Project>{BAC6449A-B85E-3C62-9F7C-4F9050A55320}</Project>
+      <Name>lib1946</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1947.vcxproj">
+      <Project>{BB7EFE8B-BD08-3D9F-9854-42394F7C640B}</Project>
+      <Name>lib1947</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1948.vcxproj">
+      <Project>{300D0BB4-E5DD-3949-ADE3-FCD193CF6D4E}</Project>
+      <Name>lib1948</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1955.vcxproj">
+      <Project>{B38A4E51-4EE2-32CB-9C7A-182E9B5A2EBF}</Project>
+      <Name>lib1955</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1956.vcxproj">
+      <Project>{4493F707-16F2-362B-B9B6-1D9FAECBB6AA}</Project>
+      <Name>lib1956</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1957.vcxproj">
+      <Project>{E0B7E749-2FF5-3500-9ECE-D941CB8FCCFF}</Project>
+      <Name>lib1957</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1958.vcxproj">
+      <Project>{4C511AC2-34BF-3305-A880-28C3604965DA}</Project>
+      <Name>lib1958</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1959.vcxproj">
+      <Project>{1BDD43F7-E516-3390-8C20-5C5806075DF0}</Project>
+      <Name>lib1959</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1960.vcxproj">
+      <Project>{1193CC75-0815-3966-84EB-55EEC258EBB1}</Project>
+      <Name>lib1960</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1964.vcxproj">
+      <Project>{2A38D30E-62E9-3AF2-8EF0-50A609592864}</Project>
+      <Name>lib1964</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1970.vcxproj">
+      <Project>{D9C985E3-8396-38C2-BAE8-9305039AC092}</Project>
+      <Name>lib1970</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1971.vcxproj">
+      <Project>{2E12A50E-7178-30FF-B3A7-AB197FCFA9AD}</Project>
+      <Name>lib1971</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1972.vcxproj">
+      <Project>{7B67AEF8-C1F3-33B6-B56E-413025B0B610}</Project>
+      <Name>lib1972</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1973.vcxproj">
+      <Project>{2FECF268-E5C4-3912-8BD6-939F58E5F22F}</Project>
+      <Name>lib1973</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1974.vcxproj">
+      <Project>{28957AA4-8174-30B8-921B-9DB85299568F}</Project>
+      <Name>lib1974</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib1975.vcxproj">
+      <Project>{FA6E8D13-60B2-3441-B08C-53F5CFA8C1F4}</Project>
+      <Name>lib1975</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib2301.vcxproj">
+      <Project>{266A6E7B-22DB-3126-9D14-605F07FACCCE}</Project>
+      <Name>lib2301</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib2302.vcxproj">
+      <Project>{92014C4A-C0C5-30E2-BEE7-A13E8348B404}</Project>
+      <Name>lib2302</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib2304.vcxproj">
+      <Project>{8F6696E9-944D-3E0A-B55F-36A6251BDFD8}</Project>
+      <Name>lib2304</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib2305.vcxproj">
+      <Project>{B76D2471-9482-3C5A-98D8-23F099E10DC2}</Project>
+      <Name>lib2305</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib2306.vcxproj">
+      <Project>{85F6DEE1-6105-3912-966C-2B39965CCFCA}</Project>
+      <Name>lib2306</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib2402.vcxproj">
+      <Project>{6CD7D5A9-6014-33BF-9288-E91AF2E37C7D}</Project>
+      <Name>lib2402</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib2404.vcxproj">
+      <Project>{C192DBE2-860F-345F-9949-A97CE631D2A4}</Project>
+      <Name>lib2404</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib2502.vcxproj">
+      <Project>{71173F7D-A8A8-377F-8E8E-D92D3FFF0748}</Project>
+      <Name>lib2502</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib3010.vcxproj">
+      <Project>{BBF0AC75-8BB1-3AFA-9E39-8A5AC3F17C37}</Project>
+      <Name>lib3010</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib3025.vcxproj">
+      <Project>{FB956F20-E225-3549-AD0B-B475D62C6C36}</Project>
+      <Name>lib3025</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib3026.vcxproj">
+      <Project>{B643A9A6-B1A5-34A5-A211-357C33E855FE}</Project>
+      <Name>lib3026</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib3027.vcxproj">
+      <Project>{5A04945B-9584-3EC1-9E89-709970C7E9FB}</Project>
+      <Name>lib3027</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib3100.vcxproj">
+      <Project>{F462FCB6-A2D3-3AC7-9830-F934A4D2300F}</Project>
+      <Name>lib3100</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib3101.vcxproj">
+      <Project>{22A5247C-B5D7-31D9-BD6A-AAF6FA245B17}</Project>
+      <Name>lib3101</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib3102.vcxproj">
+      <Project>{3AEA470D-262E-3759-A4E1-09420520BDF2}</Project>
+      <Name>lib3102</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib3103.vcxproj">
+      <Project>{23292CAC-1B30-3FE9-8D67-602F80251BF6}</Project>
+      <Name>lib3103</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib500.vcxproj">
+      <Project>{9BDED8A5-7F01-340F-ADA8-2E051534A544}</Project>
+      <Name>lib500</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib501.vcxproj">
+      <Project>{98072887-0508-3516-9C71-9B9F95D2767F}</Project>
+      <Name>lib501</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib502.vcxproj">
+      <Project>{16D76F30-57CF-3DD6-8B62-5EB3A3551D4C}</Project>
+      <Name>lib502</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib503.vcxproj">
+      <Project>{0B5E8A4D-8455-3708-9017-2B499EA7F40E}</Project>
+      <Name>lib503</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib504.vcxproj">
+      <Project>{A1FFF230-AAC3-3235-8FE0-4C0250D9A882}</Project>
+      <Name>lib504</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib505.vcxproj">
+      <Project>{C0345A88-36EE-32DB-85F1-7AD43B018A11}</Project>
+      <Name>lib505</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib506.vcxproj">
+      <Project>{78A73073-DE59-3BD3-B751-9870C399032E}</Project>
+      <Name>lib506</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib507.vcxproj">
+      <Project>{AEB2EE43-8374-333D-8C80-4E6E6C0EDD81}</Project>
+      <Name>lib507</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib508.vcxproj">
+      <Project>{C3EDE632-2F8E-3386-98F4-ABA5A275ACA6}</Project>
+      <Name>lib508</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib509.vcxproj">
+      <Project>{D185CBD3-8443-37E4-876E-498B70F309B6}</Project>
+      <Name>lib509</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib510.vcxproj">
+      <Project>{30D3FF05-A1C2-3F8D-8FA8-DF3354EEB394}</Project>
+      <Name>lib510</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib511.vcxproj">
+      <Project>{FB780D75-D199-3707-A3B9-61D73BE9E3B8}</Project>
+      <Name>lib511</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib512.vcxproj">
+      <Project>{90DA5686-E6DB-3B5C-96B0-917E16A51FA5}</Project>
+      <Name>lib512</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib513.vcxproj">
+      <Project>{EED1A54B-2AC8-39A0-B031-713A2C2B4078}</Project>
+      <Name>lib513</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib514.vcxproj">
+      <Project>{80575521-4557-30B4-B368-EFCBEB72C1F4}</Project>
+      <Name>lib514</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib515.vcxproj">
+      <Project>{FC840F06-6FBF-39B2-993F-553578608ABE}</Project>
+      <Name>lib515</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib516.vcxproj">
+      <Project>{4C34BF15-9860-3CF6-AD7A-0591D38D97BE}</Project>
+      <Name>lib516</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib517.vcxproj">
+      <Project>{E7F53CF4-1C77-33FB-A9FA-7BC49EDDACC6}</Project>
+      <Name>lib517</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib518.vcxproj">
+      <Project>{6A99F855-C1FB-399B-A024-79B29B289920}</Project>
+      <Name>lib518</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib519.vcxproj">
+      <Project>{2719FEA0-30D5-398D-B5C1-9586770B241A}</Project>
+      <Name>lib519</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib520.vcxproj">
+      <Project>{2FA28EEB-D5FD-39DC-9FBE-A28B1B6B0F74}</Project>
+      <Name>lib520</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib521.vcxproj">
+      <Project>{6E141A3E-1E64-3868-A622-00124CFB9570}</Project>
+      <Name>lib521</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib523.vcxproj">
+      <Project>{EDCC71FA-90B4-3AD2-AB7B-F0E035B2AD07}</Project>
+      <Name>lib523</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib524.vcxproj">
+      <Project>{EBF0B921-05C8-3420-B24F-BC708A21F311}</Project>
+      <Name>lib524</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib525.vcxproj">
+      <Project>{119B478F-922D-3021-9B49-B916FB95397A}</Project>
+      <Name>lib525</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib526.vcxproj">
+      <Project>{1E876E1B-6D3D-313F-9477-22DEC969A285}</Project>
+      <Name>lib526</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib527.vcxproj">
+      <Project>{57065B03-1B42-3B4B-A0C3-59C0B14F6C8B}</Project>
+      <Name>lib527</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib529.vcxproj">
+      <Project>{BE1D4562-613B-3098-B2A2-18F2BF0F8BE7}</Project>
+      <Name>lib529</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib530.vcxproj">
+      <Project>{4437A3E2-7B46-32B1-A969-5AD958A1D8B3}</Project>
+      <Name>lib530</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib532.vcxproj">
+      <Project>{2627A4F0-C7DA-3587-8160-313A935E82D6}</Project>
+      <Name>lib532</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib533.vcxproj">
+      <Project>{D8976287-3126-3163-974D-7389C0339EBD}</Project>
+      <Name>lib533</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib537.vcxproj">
+      <Project>{67420BB8-D380-3481-B413-CEFB50DDF4BB}</Project>
+      <Name>lib537</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib539.vcxproj">
+      <Project>{47D45124-82A5-335B-A751-E2C868138D1F}</Project>
+      <Name>lib539</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib540.vcxproj">
+      <Project>{87089B31-6FDF-362D-A0A1-C524BFEA3932}</Project>
+      <Name>lib540</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib541.vcxproj">
+      <Project>{37D59F54-88F8-3162-87E0-2C6267DCE6D4}</Project>
+      <Name>lib541</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib542.vcxproj">
+      <Project>{5812228C-4D3F-34BB-BC19-34501D1EF1F1}</Project>
+      <Name>lib542</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib543.vcxproj">
+      <Project>{DA009F0F-D5C8-3B6D-A45A-A2A7EDA557CB}</Project>
+      <Name>lib543</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib544.vcxproj">
+      <Project>{905C1C52-CDB7-3421-A2EB-CF436AA41644}</Project>
+      <Name>lib544</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib545.vcxproj">
+      <Project>{2DDA5E6F-8444-3420-91A5-50B1C6941DDE}</Project>
+      <Name>lib545</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib547.vcxproj">
+      <Project>{0E0A91C1-0CB8-3DFD-A28F-B9F04ACE001A}</Project>
+      <Name>lib547</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib548.vcxproj">
+      <Project>{A06B32E1-4054-3EF0-A6EB-44C4977F5706}</Project>
+      <Name>lib548</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib549.vcxproj">
+      <Project>{2C5E2177-D47E-3255-A36A-ACEDF066493E}</Project>
+      <Name>lib549</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib552.vcxproj">
+      <Project>{CAFDF297-643B-3658-9655-C3659944CEB1}</Project>
+      <Name>lib552</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib553.vcxproj">
+      <Project>{605B7575-F7A2-36C7-8A55-FB6B8D11E488}</Project>
+      <Name>lib553</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib554.vcxproj">
+      <Project>{DB2F509E-DC48-3F17-A2A9-A7200334BE47}</Project>
+      <Name>lib554</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib555.vcxproj">
+      <Project>{03DEB50C-0BFD-35F3-99C2-5AD853CF9851}</Project>
+      <Name>lib555</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib556.vcxproj">
+      <Project>{5D3A92D3-21F5-3496-8964-65D57993C2B2}</Project>
+      <Name>lib556</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib557.vcxproj">
+      <Project>{1F5B5297-22F8-3739-9472-7729171CC07B}</Project>
+      <Name>lib557</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib558.vcxproj">
+      <Project>{49755C80-932C-32A5-83FA-D9FF679D8D27}</Project>
+      <Name>lib558</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib559.vcxproj">
+      <Project>{901BFBA4-3730-33EF-9666-D8729980104A}</Project>
+      <Name>lib559</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib560.vcxproj">
+      <Project>{22F2EEB6-14B1-3C6F-8B9F-014021E140DD}</Project>
+      <Name>lib560</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib562.vcxproj">
+      <Project>{29BFF5EB-B8FA-3C6E-A2B5-8A4E22FA2794}</Project>
+      <Name>lib562</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib564.vcxproj">
+      <Project>{C6C6B7D8-CECD-3146-B242-2F1CBBAF621D}</Project>
+      <Name>lib564</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib565.vcxproj">
+      <Project>{8B904BB1-B4DF-3920-820B-058E8B177460}</Project>
+      <Name>lib565</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib566.vcxproj">
+      <Project>{C940B864-62CA-3485-A0F5-888DB89CCE10}</Project>
+      <Name>lib566</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib567.vcxproj">
+      <Project>{21425C0D-8602-378C-A588-DF6D5D7945FC}</Project>
+      <Name>lib567</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib568.vcxproj">
+      <Project>{6DFCEAB0-8972-3051-BC99-58ED87A42CBE}</Project>
+      <Name>lib568</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib569.vcxproj">
+      <Project>{67A7D526-0FAF-30EA-98FC-BC6099AC8F35}</Project>
+      <Name>lib569</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib570.vcxproj">
+      <Project>{AAE87453-DE9A-3A14-9A37-12F0C6420DB6}</Project>
+      <Name>lib570</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib571.vcxproj">
+      <Project>{60D14EB8-0928-39B9-825E-2C8FE6ACD4ED}</Project>
+      <Name>lib571</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib572.vcxproj">
+      <Project>{09ED981A-EB58-36EC-A054-D2B7F4BB0F71}</Project>
+      <Name>lib572</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib573.vcxproj">
+      <Project>{AE7A741E-E562-361D-9770-CFCBC199D29B}</Project>
+      <Name>lib573</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib574.vcxproj">
+      <Project>{461A9C3A-0543-34F9-A6FC-52D0C92B648F}</Project>
+      <Name>lib574</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib575.vcxproj">
+      <Project>{F6510597-E540-37A8-A3EF-081A045E1FF7}</Project>
+      <Name>lib575</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib576.vcxproj">
+      <Project>{597A1ED0-6AA3-3EF8-A5DC-4BCE6D1354A9}</Project>
+      <Name>lib576</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib578.vcxproj">
+      <Project>{A99A460C-BC18-3B63-B8A0-9733A8B3BF22}</Project>
+      <Name>lib578</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib579.vcxproj">
+      <Project>{E4DDEA40-AAA2-36C2-95D1-85C3B9DCF956}</Project>
+      <Name>lib579</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib582.vcxproj">
+      <Project>{C50D606B-BCD8-35FE-B60F-E4AD54FAFAA2}</Project>
+      <Name>lib582</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib583.vcxproj">
+      <Project>{44AAF6F0-F6E7-3FD0-B02C-294C01DC3318}</Project>
+      <Name>lib583</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib584.vcxproj">
+      <Project>{704E91F7-58B4-3140-9D84-024F9C2EEB95}</Project>
+      <Name>lib584</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib585.vcxproj">
+      <Project>{6C4D7944-F23A-3F73-9604-DD7AE599CB9D}</Project>
+      <Name>lib585</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib586.vcxproj">
+      <Project>{72F8CF6A-97F3-3E05-9EEE-6D61579E1BFC}</Project>
+      <Name>lib586</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib587.vcxproj">
+      <Project>{043237CD-5E7B-3E2F-B5B5-7F87D5B752A8}</Project>
+      <Name>lib587</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib589.vcxproj">
+      <Project>{2E6AEEF7-7B6C-3B81-BBA1-8DA91B47AEF3}</Project>
+      <Name>lib589</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib590.vcxproj">
+      <Project>{1A053A59-8EA7-3A2D-B378-9F5C41B65D8E}</Project>
+      <Name>lib590</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib591.vcxproj">
+      <Project>{C1D28FC4-A034-3865-9A81-A03DB2662BC8}</Project>
+      <Name>lib591</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib597.vcxproj">
+      <Project>{5DA8655F-2A4A-32D8-BD88-4CA5B91A89CA}</Project>
+      <Name>lib597</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib598.vcxproj">
+      <Project>{95EB0840-AE1D-396F-8916-719F97A3DB1D}</Project>
+      <Name>lib598</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib599.vcxproj">
+      <Project>{0C96FBFC-FE38-3447-87F4-DCC91672647C}</Project>
+      <Name>lib599</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib643.vcxproj">
+      <Project>{89E7441F-D7D9-3DE9-98B7-7460014A508D}</Project>
+      <Name>lib643</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib645.vcxproj">
+      <Project>{6A161686-4C9E-3445-A5E4-03F8136C282E}</Project>
+      <Name>lib645</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib650.vcxproj">
+      <Project>{C68DC0F5-253C-3BD3-882A-8E77ED9E2785}</Project>
+      <Name>lib650</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib651.vcxproj">
+      <Project>{9D5FBD9C-C69E-346B-AE43-4884CFB08881}</Project>
+      <Name>lib651</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib652.vcxproj">
+      <Project>{5717025D-0421-3946-8544-80AB020BC954}</Project>
+      <Name>lib652</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib653.vcxproj">
+      <Project>{428C14CE-80A0-31D3-B577-137D7B27D00D}</Project>
+      <Name>lib653</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib654.vcxproj">
+      <Project>{A354169B-9259-3C31-AFA0-AEFC4B79DB7A}</Project>
+      <Name>lib654</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib655.vcxproj">
+      <Project>{A0295EFD-2DB5-3BE3-9A35-F0F7A237EBBF}</Project>
+      <Name>lib655</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib658.vcxproj">
+      <Project>{B9F05884-A2F2-3E43-8927-B38B312D5724}</Project>
+      <Name>lib658</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib659.vcxproj">
+      <Project>{8652A6BC-A299-31DA-AF8D-184DE44016DA}</Project>
+      <Name>lib659</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib661.vcxproj">
+      <Project>{00A11999-DB28-3D3F-B744-A537E338273C}</Project>
+      <Name>lib661</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib666.vcxproj">
+      <Project>{4C56AF93-8E92-3F7F-B1C4-E4DF2E1DDABC}</Project>
+      <Name>lib666</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib667.vcxproj">
+      <Project>{2C269EC4-1BD6-3CAA-97D5-551A7FCF06D4}</Project>
+      <Name>lib667</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib668.vcxproj">
+      <Project>{B538D93C-B6D4-3F11-8AB9-47C84444F9AE}</Project>
+      <Name>lib668</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib670.vcxproj">
+      <Project>{2373BE53-7A88-3DD6-B013-CB3161D896AB}</Project>
+      <Name>lib670</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib671.vcxproj">
+      <Project>{F138ACDA-08CA-333D-8805-AD4A5505B3DF}</Project>
+      <Name>lib671</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib672.vcxproj">
+      <Project>{501C39E2-07A7-397B-B6E2-C62F0E958482}</Project>
+      <Name>lib672</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib673.vcxproj">
+      <Project>{AFA44239-3AA7-3711-AF35-A050738A70E2}</Project>
+      <Name>lib673</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib674.vcxproj">
+      <Project>{A22CC224-4A93-3C01-8DDB-1028C34B397A}</Project>
+      <Name>lib674</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib676.vcxproj">
+      <Project>{99EE2DAB-47C1-31A4-8ADF-9D9EA3AC6AC1}</Project>
+      <Name>lib676</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib677.vcxproj">
+      <Project>{00F1BEAD-E90D-30B9-A4C5-36C010A83D23}</Project>
+      <Name>lib677</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\lib678.vcxproj">
+      <Project>{35DC3AFF-D912-39AA-8BCD-7EE1FF010613}</Project>
+      <Name>lib678</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\libauthretry.vcxproj">
+      <Project>{B700F617-380D-3B3D-84AF-C8B08F5FAC14}</Project>
+      <Name>libauthretry</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\libntlmconnect.vcxproj">
+      <Project>{D7A2FAAE-D357-37C5-86A3-A3901A20C2C0}</Project>
+      <Name>libntlmconnect</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\libtest\libprereq.vcxproj">
+      <Project>{D64229B4-C6A7-39AD-A148-F214BADC9572}</Project>
+      <Name>libprereq</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\server\mqttd.vcxproj">
+      <Project>{BCCAC4FF-926D-3789-B8C8-37D8BF7D3D93}</Project>
+      <Name>mqttd</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\server\resolve.vcxproj">
+      <Project>{63D4B6A1-C6A6-3207-9AB9-2052C29F3B05}</Project>
+      <Name>resolve</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\server\rtspd.vcxproj">
+      <Project>{FF1C3615-5AC3-3026-8B54-80EB1E37ECC0}</Project>
+      <Name>rtspd</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\server\sockfilt.vcxproj">
+      <Project>{D9060FB3-CC81-362E-8181-5129501439E9}</Project>
+      <Name>sockfilt</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\server\socksd.vcxproj">
+      <Project>{E714B882-D61F-36C9-AD6F-DA8B0C1D7B87}</Project>
+      <Name>socksd</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\server\sws.vcxproj">
+      <Project>{A1358812-27A2-3579-AC73-9630DBB14FFD}</Project>
+      <Name>sws</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\Fetch\curl-build\tests\server\tftpd.vcxproj">
+      <Project>{4838BEDB-7857-3B4C-A6F7-9F0FAE706E1B}</Project>
+      <Name>tftpd</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
