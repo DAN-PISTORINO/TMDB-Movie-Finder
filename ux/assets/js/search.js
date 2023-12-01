@@ -1,16 +1,13 @@
 // Replace with your TMDB API key
 const API_KEY = "1857e2cb374e86db84f27a8550dc6e24";
 
-
-const txtSearchMovie = document.getElementById("txtSearchMovie");
-const searchButton = document.getElementById("searchButton");
-const resultsContainer = document.getElementById("resultsContainer");
-
-txtSearchMovie.addEventListener("keyup", updateMovieSearch);
+//txtSearchMovie.addEventListener("requestMovieSearchUpdate", updateMovieSearch(this.value));
 
 // c++ binding to update the input box
-function updateMovieSearch(txt) {
-    txtSearchMovie.value += txt;
+async function updateMovieSearch(txt) {
+    txtSearchMovie = document.getElementById("txtSearchMovie");
+    //txtSearchMovie.value = txt;
+    
 };
 
 function bindTxtMovieSearch() {
@@ -44,7 +41,7 @@ function bindTxtMovieSearch() {
 
 async function searchMovies() {
     const movieTitle = txtSearchMovie.value.trim();
-
+    resultsContainer = document.getElementById("resultsContainer");
     if (!movieTitle) {
         return;
     }
@@ -71,8 +68,22 @@ async function searchMovies() {
     // Save movie data to JSON file
     const fileName = "movieSearchResults.json";
     const fileContent = JSON.stringify(movieData, null, 2);
-    await saveAs(fileContent, fileName, { type: "json" });
 
+    var myBlob = new Blob([fileContent.toString()], { type: "text/plain" });
+    const fileHandle = await window.showSaveFilePicker({
+        types: [{
+            description: "Text file",
+            accept: { "text/plain": [".txt"] }
+        }]
+    });
+    const fileStream = await fileHandle.createWritable();
+
+    // (C) WRITE FILE
+    await fileStream.write(myBlob);
+    await fileStream.close();
+
+    saveAs(fileContent, fileName, { type: "json" });
+    
     // Display search results
     const resultsHTML = movies.map((movie) => {
         return `<div class="movie-result">
@@ -82,7 +93,7 @@ async function searchMovies() {
     </div>`;
     }).join("");
 
-    resultsContainer.innerHTML = resultsHTML;
+    resultsContainer.document.innerHTML = resultsHTML;
 
     // notify c++ of search results so it can make changes to the other json files: search history, stats
     //var selectedClass = btnDashboard();

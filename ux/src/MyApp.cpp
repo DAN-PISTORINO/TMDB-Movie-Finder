@@ -179,7 +179,7 @@ void MyApp::OnChangeFocus(bool focused) {
 
 bool MyApp::OnKeyEvent(const KeyEvent& evt) {
     if (evt.kType_Char == evt.type) {
-        right_pane_;
+        
         return true;
     }
     return false;
@@ -192,7 +192,9 @@ bool MyApp::OnMouseEvent(const MouseEvent& evt) {
         break;
     }
     case MouseEvent::kType_MouseDown: {
-        if (evt.button == MouseEvent::kButton_Left) { ; }
+        if (evt.button == MouseEvent::kButton_Left) { 
+            ;
+        }
         break;
     }
     case MouseEvent::kType_MouseUp: {
