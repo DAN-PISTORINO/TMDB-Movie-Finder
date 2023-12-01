@@ -113,6 +113,31 @@ JSValue MyApp::btnHelp(const JSObject& thisObject, const JSArgs& args) {
     return JSValue("Help");
 }
 
+JSValue MyApp::GetStringFromJS(const JSObject& thisObject, const JSArgs& args) {
+// A callback function to receive the string from JS
+//static StringResult GetStringFromJS(JSContextRef ctx, JSObjectRef obj, JSValueRef thisObject,
+//    size_t argc, JSValueRef* argv) {
+    JSContextRef ctx = thisObject.context();    
+    
+    // Get the string data
+    JSStringRef jsStrRef = JSValueToStringCopy(ctx, args[0], nullptr);
+    char* cStr;
+    JSStringGetUTF8CString(jsStrRef, cStr, 512);
+
+    JSStringRef jsFilenameRef = JSValueToStringCopy(ctx, args[1], nullptr);
+    char* cFilename;
+    JSStringGetUTF8CString(jsFilenameRef, cFilename, 512);
+
+    // Convert the string to C++ string
+    string str = std::string(cStr);
+    string filename = std::string(cFilename);
+
+    JSStringRelease(jsStrRef);
+    JSStringRelease(jsFilenameRef);
+    
+    return writeFile(filename, str);
+}
+
 void MyApp::Run() {
     app_->Run();
 }
@@ -148,6 +173,9 @@ void MyApp::OnDOMReady(ultralight::View* caller, uint64_t frame_id, bool is_main
     global["btnHelp"] = BindJSCallbackWithRetval(&MyApp::btnHelp);
     
     global["searchMovies"] = BindJSCallbackWithRetval(&MyApp::btnSearchSubmit);
+
+    global["stringFromJS"] = BindJSCallbackWithRetval(&MyApp::GetStringFromJS);
+
 }
 
 // called when Window closed.
@@ -179,7 +207,7 @@ void MyApp::OnChangeFocus(bool focused) {
 
 bool MyApp::OnKeyEvent(const KeyEvent& evt) {
     if (evt.kType_Char == evt.type) {
-        right_pane_;
+        
         return true;
     }
     return false;
@@ -192,7 +220,9 @@ bool MyApp::OnMouseEvent(const MouseEvent& evt) {
         break;
     }
     case MouseEvent::kType_MouseDown: {
-        if (evt.button == MouseEvent::kButton_Left) { ; }
+        if (evt.button == MouseEvent::kButton_Left) { 
+            ;
+        }
         break;
     }
     case MouseEvent::kType_MouseUp: {
@@ -214,4 +244,9 @@ void MyApp::OnFailLoading(ultralight::View* caller,
     const String& description,
     const String& error_domain,
     int error_code) {
+}
+
+bool MyApp::writeFile(string filename, string str_data) {
+    std::ofstream of = std::ofstream(filename);
+    of << str_data;
 }

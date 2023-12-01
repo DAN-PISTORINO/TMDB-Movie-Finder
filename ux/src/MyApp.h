@@ -3,9 +3,11 @@
 #include <AppCore/Window.h>
 #include <AppCore/Overlay.h>
 #include <AppCore/JSHelpers.h>
-
+#include <Ultralight/Ultralight.h>
 #include <string>
 #include <map>
+#include <nlohmann/json.hpp>
+#include <fstream>
 
 using namespace ultralight;
 using std::string;
@@ -14,6 +16,11 @@ using std::map;
 #define WINDOW_WIDTH    900
 #define WINDOW_HEIGHT   600
 #define LEFT_PANE_WIDTH 200
+
+struct StringResult {
+    std::string val;
+    bool success;
+};
 
 class MyApp : public WindowListener, public ViewListener, public LoadListener {
     enum VIEW { SIDEBAR, DASHBOARD, SEARCH, FAVORITES, HELP};  
@@ -77,5 +84,12 @@ public:
     JSValue btnFavorites(const JSObject& thisObject, const JSArgs& args);
     JSValue btnHelp(const JSObject& thisObject, const JSArgs& args);
     JSValue btnSearchSubmit(const JSObject& thisObject, const JSArgs& args);
+
+    JSValue GetStringFromJS(const JSObject& thisObject, const JSArgs& args);
+
+    bool writeFile(string filename, string str_data);
+    string readFile(string filename);
+
+
     void Run();
 };
