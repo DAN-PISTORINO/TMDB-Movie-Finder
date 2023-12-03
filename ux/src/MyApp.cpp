@@ -303,12 +303,6 @@ bool MyApp::OnScrollEvent(const ScrollEvent& evt) {
     return true;
 }
 
-void MyApp::OnChangeCursor(ultralight::View* caller, ultralight::Cursor cursor) {
-    if (App::instance()) {
-        window_->SetCursor(cursor);
-    }
-}
-
 void MyApp::OnFailLoading(ultralight::View* caller,
     uint64_t frame_id,
     bool is_main_frame,
