@@ -1,7 +1,0 @@
-# CMake generation dependency list for this directory.
-D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-build/lib/Makefile.inc.cmake
-D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-build/lib/Makefile.soname.cmake
-D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-src/lib/CMakeLists.txt
-D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-src/lib/Makefile.inc
-D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-src/lib/Makefile.soname
-D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-src/lib/curl_config.h.cmake

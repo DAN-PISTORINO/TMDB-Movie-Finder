@@ -11,6 +11,7 @@
         "D:\\temp\\OLD\\ult3\\Libraries\\json\\include",
         "D:\\temp\\OLD\\ult3\\include"
       ],
+      "compilerSwitches": "",
       "defines": [
         "NDEBUG",
         "_DEBUG"

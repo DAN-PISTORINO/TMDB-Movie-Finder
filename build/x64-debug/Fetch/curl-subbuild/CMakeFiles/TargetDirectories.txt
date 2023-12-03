@@ -1,3 +1,0 @@
-D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-subbuild/CMakeFiles/curl-populate.dir
-D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-subbuild/CMakeFiles/ALL_BUILD.dir
-D:/temp/OLD/ult3/build/x64-debug/Fetch/curl-subbuild/CMakeFiles/ZERO_CHECK.dir

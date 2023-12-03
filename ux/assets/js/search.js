@@ -1,77 +1,92 @@
-// Replace with your TMDB API key
 const API_KEY = "1857e2cb374e86db84f27a8550dc6e24";
+const POSTER_URL = "http://image.tmdb.org/t/p/w500/";
+const COMPANY_LOGO_URL = "https://image.tmdb.org/t/p/w154/";
+const MOVIE_SEARCH = "https://api.themoviedb.org/3/search/movie?include_adult=false&language=en-US&page=1'"
+//function sendFileToCpp(filename, movieTitle, searchTerm) { return GetStringFromJS(filename, movieTitle, searchTerm); }
 
-//txtSearchMovie.addEventListener("requestMovieSearchUpdate", updateMovieSearch(this.value));
+function insertProgBar(prog) {
+    return 'Loading Records...<div class="progress-bar"><div class="progress-bar-filled" style="width: '+prog+'%;" ></div ></div >';
+}
 
-// c++ binding to update the input box
-async function updateMovieSearch(txt) {
-    txtSearchMovie = document.getElementById("txtSearchMovie");
-    //txtSearchMovie.value = txt;
-    
-};
-var search_results = "";
-
-async function sendFileToCpp(filename, str) { return getFileFromJS(filename, str); }
-
-function bindTxtMovieSearch() {
-    var strMovie = document.querySelector('#txtSearchMovie');
-    strMovie.onkeypress = (function (e) {
-        // to keypress stuff here.
-        var d = "";
-    });
-};
-
-async function writeJson(fileName, fileContent) {
-    const FileSystem = require('fs');
-    fs.writeFile(fileName, fileContent, (err) => { if (err) throw err; });
-    // should notify c++ once file is written;
-};
-
+// Function to update the progress bar
+async function updateProgBar(percentage) {
+    const progressBar = document.querySelector('.progress-bar-filled');
+    progressBar.style.width = `${percentage}%`;
+}
 async function searchMovies() {
-    const movieTitle = txtSearchMovie.value.trim();
+    const searchTerm = txtSearchMovie.value.trim();
     resultsContainer = document.getElementById("resultsContainer");
-    if (!movieTitle) {
+    if (!searchTerm) {
         return;
     }
 
-    const url = "https://api.themoviedb.org/3/search/movie?query=" + movieTitle + "&api_key=" + API_KEY;
-    const response = await fetch(url);
-    const data = await response.json();
+    const url = "https://api.themoviedb.org/3/search/movie?query=" + searchTerm + "&api_key=" + API_KEY + "&language=en-US&page=";
+    var movies;
+    let moviesJson;
+    let movieMap;
+    let clerical;
+    let cur_page = 0;
+    let response;
+    let responseJson;
+    resultsContainer.innerHTML = insertProgBar(0);
 
-    if (data.success==false) {
-        resultsContainer.innerHTML = data.status_message;
-        return;
-    }
-    
-    const movies = data.results;
-    const movieData = movies.map((movie) => {
-        return {
-            id: movie.id,
-            title: movie.title,
-            overview: movie.overview,
-            poster_path: movie.poster_path,
-        };
-    });
+    do {
+        cur_page = cur_page + 1;
+        response = await fetch(url + cur_page);
+        responseJson = await response.json();
 
-    // Save movie data to JSON file
-    const fileName = "movieSearchResults.json";
-    const fileContent = JSON.stringify(movieData, null, 2);
+        if (responseJson.success == false) {
+            resultsContainer.innerHTML = responseJson.status_message;
+            return;
+        }
+        if (Number(responseJson.total_results) == 0) {
+            resultsContainer.innerHTML = "No Movies Found.";
+            return;
+        }
+        movies = responseJson.results;
+        movieMap = movies.map((movie) => {
+            return {
+                id: movie.id,
+                title: movie.title,
+                overview: movie.overview,
+                release_date: movie.release_date,
+                popularity: movie.popularity,
+                vote_average: movie.vote_average,
+                poster_path: movie.poster_path,
+                backdrop_path: movie.backdrop_path,
+            };
+        });
 
-    //const FileSystem = require("fs");
-    sendFileToCpp(fileName, fileContent);
+        if (cur_page == 1) { moviesJson = movieMap; }
+        else {
+            moviesJson = moviesJson.concat(movieMap);
+        }         
+
+        updateProgBar(100 * Number(responseJson.page) / Number(responseJson.total_pages));
+        // tmdb rate-limits requests.
+        var x = 1;
+        var y = 1;
+        setTimeout(function () {
+            x = 3 * x + 2;
+            y = x / 2;
+        }, 10);
+
+    } while (Number(responseJson.page, 10) <= Number(responseJson.total_pages, 10))
+
     
     // Display search results
-    const resultsHTML = movies.map((movie) => {
-        return `<div class="movie-result">
-      <img src="https://image.tmdb.org/t/p/w185/${movie.poster_path}" alt="${movie.title}">
-      <h3>${movie.title}</h3>
-      <p>${movie.overview}</p>
-    </div>`;
-    }).join("");
+    const resultsHTML = moviesJson.map((movie) => {
+        return "<div class='movie-result'><img class='poster' src='" + POSTER_URL + movie.poster_path + "' alt=''" + movie.title + "''> \
+                <h3>" + movie.title + "</h3><p>" + movie.overview + "</p > \
+                <p>Released: " + movie.release_date + "<tab>Popularity Score: " + movie.popularity + "<br></div >";
+    }).join('');
 
-    resultsContainer.document.innerHTML = resultsHTML;
-
-    // notify c++ of search results so it can make changes to the other json files: search history, stats
-    //var selectedClass = btnDashboard();
+    resultsContainer.innerHTML = resultsHTML;
+    
+    // Save movie data to JSON file
+    const fileName = "movieSearchResults.json";
+    const fileContent = JSON.stringify(moviesJson, null, 2);
+    
+    sendFileToCpp(fileName, fileContent, searchTerm);    
 };
 

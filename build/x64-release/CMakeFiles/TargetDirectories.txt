@@ -1,4 +1,0 @@
-D:/temp/OLD/ult3/build/x64-release/CMakeFiles/ALL_BUILD.dir
-D:/temp/OLD/ult3/build/x64-release/CMakeFiles/ZERO_CHECK.dir
-D:/temp/OLD/ult3/build/x64-release/FetchContent_Downloads/nlohmann_json-build/CMakeFiles/ALL_BUILD.dir
-D:/temp/OLD/ult3/build/x64-release/ux/CMakeFiles/MovieFinder.dir

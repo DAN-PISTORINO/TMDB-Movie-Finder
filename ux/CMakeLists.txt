@@ -29,7 +29,7 @@ include_directories("${nlohmann_json_SOURCE_DIR}")
 include_directories("${MINGW64_BIN}/include") 
 link_directories("${MINGW64_BIN}" "${MINGW64_DIR}/lib")
 
-include_directories("src" "assets")
+include_directories("src" "assets" "bin")
 
 link_libraries(nlohmann_json nlohmann_json::nlohmann_json)
 

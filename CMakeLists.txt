@@ -4,6 +4,8 @@ project(MF_Root C CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+link_libraries(-lc++fs)
+
 set(MINGW64_BIN "c:/msys64/mingw64/bin")
 set(MINGW64_DIR "c:/msys64/mingw64")
 

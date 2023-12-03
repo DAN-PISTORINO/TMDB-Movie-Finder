@@ -10,7 +10,34 @@
     <div class="content">
         <div class="message">
             <h1>Recent Searches</h1>
+            <div id="resultsContainer"></div>
         </div>
     </div>
+    <script>
+        function loadFavs() {
+            response = await fetch("./favs.json");
+           
+            responseMap = response.map((movie) => {
+                return {
+                    id: movie.id,
+                    title: movie.title,
+                    overview: movie.overview,
+                    release_date: movie.release_date,
+                    popularity: movie.popularity,
+                    vote_average: movie.vote_average,
+                    poster_path: movie.poster_path,
+                    backdrop_path: movie.backdrop_path,
+                };
+            });
+            // Display search results
+            const resultsHTML = responseMap.map((movie) => {
+                return "<div class='movie-result'><img class='poster' src='" + POSTER_URL + movie.poster_path + "' alt=''" + movie.title + "''> \
+                        <h3>" + movie.title + "</h3><p>" + movie.overview + "</p > \
+                        <p>Released: " + movie.release_date + "<tab>Popularity Score: " + movie.popularity + "<br></div >";
+            }).join('');
+            document.getElementById("resultsContainer").innerHTML = resultsHTML;
+        }
+        loadFavs();
+    </script>
 </body>
 </html>

@@ -1,0 +1,496 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27.6"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						3
+					]
+				},
+				{
+					"build" : "FetchContent_Downloads/nlohmann_json-build",
+					"jsonFile" : "directory-FetchContent_Downloads.nlohmann_json-build-Debug-c0b2035a1e4015137d80.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "build/x64-debug/FetchContent_Downloads/nlohmann_json-src",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "ux",
+					"jsonFile" : "directory-ux-Debug-9479a87947e1a26a52dc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27.6"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "ux",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2
+					],
+					"name" : "MF_Root",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "nlohmann_json",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-9f82399e70b97a386b70.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@89b82a769b7be0c7e05d",
+					"jsonFile" : "target-ALL_BUILD-Debug-4273ea21256663c88e6a.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "MovieFinder::@0e3d3e565b53e95315fb",
+					"jsonFile" : "target-MovieFinder-Debug-e83b16aa7da5c6a91f75.json",
+					"name" : "MovieFinder",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-36d31cff69537fc8c087.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27.6"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						3
+					]
+				},
+				{
+					"build" : "FetchContent_Downloads/nlohmann_json-build",
+					"jsonFile" : "directory-FetchContent_Downloads.nlohmann_json-build-Release-c0b2035a1e4015137d80.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "build/x64-debug/FetchContent_Downloads/nlohmann_json-src",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "ux",
+					"jsonFile" : "directory-ux-Release-9479a87947e1a26a52dc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27.6"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "ux",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2
+					],
+					"name" : "MF_Root",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "nlohmann_json",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-9f82399e70b97a386b70.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@89b82a769b7be0c7e05d",
+					"jsonFile" : "target-ALL_BUILD-Release-4273ea21256663c88e6a.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "MovieFinder::@0e3d3e565b53e95315fb",
+					"jsonFile" : "target-MovieFinder-Release-3685b47d9f2fd5d0ad01.json",
+					"name" : "MovieFinder",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-36d31cff69537fc8c087.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-MinSizeRel-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27.6"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						3
+					]
+				},
+				{
+					"build" : "FetchContent_Downloads/nlohmann_json-build",
+					"jsonFile" : "directory-FetchContent_Downloads.nlohmann_json-build-MinSizeRel-c0b2035a1e4015137d80.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "build/x64-debug/FetchContent_Downloads/nlohmann_json-src",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "ux",
+					"jsonFile" : "directory-ux-MinSizeRel-9479a87947e1a26a52dc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27.6"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "ux",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2
+					],
+					"name" : "MF_Root",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "nlohmann_json",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-9f82399e70b97a386b70.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@89b82a769b7be0c7e05d",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-4273ea21256663c88e6a.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "MovieFinder::@0e3d3e565b53e95315fb",
+					"jsonFile" : "target-MovieFinder-MinSizeRel-f9af84c40f69bfaf926c.json",
+					"name" : "MovieFinder",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-36d31cff69537fc8c087.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-RelWithDebInfo-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27.6"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						3
+					]
+				},
+				{
+					"build" : "FetchContent_Downloads/nlohmann_json-build",
+					"jsonFile" : "directory-FetchContent_Downloads.nlohmann_json-build-RelWithDebInfo-c0b2035a1e4015137d80.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "build/x64-debug/FetchContent_Downloads/nlohmann_json-src",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "ux",
+					"jsonFile" : "directory-ux-RelWithDebInfo-9479a87947e1a26a52dc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27.6"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "ux",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2
+					],
+					"name" : "MF_Root",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "nlohmann_json",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-9f82399e70b97a386b70.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@89b82a769b7be0c7e05d",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-4273ea21256663c88e6a.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "MovieFinder::@0e3d3e565b53e95315fb",
+					"jsonFile" : "target-MovieFinder-RelWithDebInfo-b5a08934dcaf8268892e.json",
+					"name" : "MovieFinder",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-36d31cff69537fc8c087.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/temp/OLD/ult3/build/x64-debug",
+		"source" : "D:/temp/OLD/ult3"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
