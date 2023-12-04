@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "ux/RelWithDebInfo/MovieFinder.exe"
+			"path" : "ux/MinSizeRel/MovieFinder.exe"
 		},
 		{
-			"path" : "ux/RelWithDebInfo/MovieFinder.pdb"
+			"path" : "ux/MinSizeRel/MovieFinder.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -76,7 +76,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob1 /DNDEBUG -std:c++17 -MD -Zi"
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O1 /Ob1 /DNDEBUG -std:c++17 -MD"
 				}
 			],
 			"includes" : 
@@ -139,11 +139,11 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob1 /DNDEBUG -MD -Zi",
+				"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O1 /Ob1 /DNDEBUG -MD",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:windows /ENTRY:mainCRTStartup",
+				"fragment" : "/machine:x64 /INCREMENTAL:NO /subsystem:windows /ENTRY:mainCRTStartup",
 				"role" : "flags"
 			},
 			{
@@ -160,11 +160,6 @@
 				"backtrace" : 3,
 				"fragment" : "-LIBPATH:c:\\msys64\\mingw64\\lib",
 				"role" : "libraryPath"
-			},
-			{
-				"backtrace" : 1,
-				"fragment" : "-lc++fs",
-				"role" : "libraries"
 			},
 			{
 				"backtrace" : 1,

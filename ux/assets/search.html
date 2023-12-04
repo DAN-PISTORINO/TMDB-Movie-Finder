@@ -17,9 +17,10 @@
             <input type="text" id="txtSearchMovie" 
                    placeholder="Enter movie title"
                    onfocus="select_next_mouseup = true;"
-                   onmouseup="if (select_next_mouseup) this.select(); select_next_mouseup = false;">
+                   onmouseup="if (select_next_mouseup) this.select(); select_next_mouseup = false;"
+                   onload="focus();">
             <button id="searchBtn" type="submit" onclick="searchMovies();">Search</button>
-            <div id="resultsContainer"></div>
+            <div id="resultsContainer" class="Container"></div>
         </div>
     </div>
     <script>

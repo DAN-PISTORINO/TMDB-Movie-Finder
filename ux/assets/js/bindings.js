@@ -14,12 +14,6 @@ function HandleButton(elmnt) {
             document.getElementById("liSearch").className = "active";
             var selectedClass = btnSearch();
             break;
-        case "Favorites":
-            // disable active and set new active
-            console.log("Favorites clicked");
-            document.getElementById("liFavorites").className = "active";
-            var selectedClass = btnFavorites();
-            break;
         case "Help":
             // disable active and set new active
             console.log("Help clicked");

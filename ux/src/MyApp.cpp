@@ -17,6 +17,15 @@ using namespace ultralight;
 
 static MyApp* g_ui = nullptr;
 
+// returns json string of movies
+JSValue MyApp::processGenreSearch(const JSObject& thisObject, const JSArgs& args) {
+    string jString = "[{\"id\": 116776, \"title\" : \"Dragon Ball: Mystical Adventure\", \"overview\" : \"Master Roshi and power from the royal.\", \"release_date\" : \"1988-07-09\", \"popularity\" : 340.423, \"vote_average\" : 6.756, \"poster_path\" : \"/5aXG0B3TYTpQsodXzvYCkKQfpB1.jpg\", \"backdrop_path\" : null}]";
+    JSArgs jsonJSString = JSArgs({jString.c_str()});
+    returnGenreResults(jsonJSString); // getGenreMovies();
+    return JSValue(jString.c_str());
+}
+
+
 MyApp::MyApp() {
 
     app_ = App::Create();
@@ -32,7 +41,7 @@ MyApp::MyApp() {
     overlays_.insert(make_pair(VIEW::SIDEBAR, Overlay::Create(window_.get(), 100, 100, 0, 0)));
     overlays_.insert(make_pair(VIEW::DASHBOARD, Overlay::Create(window_.get(), 100, 100, 0, 0)));
     overlays_.insert(make_pair(VIEW::SEARCH, Overlay::Create(window_.get(), 100, 100, 0, 0)));
-    overlays_.insert(make_pair(VIEW::FAVORITES, Overlay::Create(window_.get(), 100, 100, 0, 0)));
+
     overlays_.insert(make_pair(VIEW::HELP, Overlay::Create(window_.get(), 100, 100, 0, 0)));
 
 
@@ -50,20 +59,13 @@ MyApp::MyApp() {
     overlays_[VIEW::SIDEBAR]->view()->LoadURL(VIEW_URLS.SIDEBAR);
     overlays_[VIEW::DASHBOARD]->view()->LoadURL(VIEW_URLS.DASHBOARD);
     overlays_[VIEW::SEARCH]->view()->LoadURL(VIEW_URLS.SEARCH);
-    overlays_[VIEW::FAVORITES]->view()->LoadURL(VIEW_URLS.FAVORITES);
     overlays_[VIEW::HELP]->view()->LoadURL(VIEW_URLS.HELP);
     
     // set panes;
     left_pane_ = overlays_[VIEW::SIDEBAR];
+    overlays_[VIEW::SIDEBAR]->Show();
     right_pane_ = overlays_[VIEW::DASHBOARD];
     setRightPane(overlays_[VIEW::DASHBOARD]);
-    
-    // set initial layout and sizing, defines gl clipping bounds
-    OnResize(window_.get(), window_->width(), window_->height());
-
-    // show start with sidebar and dashboard
-    overlays_[VIEW::SIDEBAR]->Show();
-    overlays_[VIEW::DASHBOARD]->Show();
 }
 
 MyApp::~MyApp() {
@@ -84,6 +86,7 @@ void MyApp::setRightPane(RefPtr<Overlay> paneOverlay) {
     RefPtr<JSContext> lock(right_pane_->view()->LockJSContext());
     right_pane_->Show();
     right_pane_->Focus();
+    right_pane_->view()->Focus();
 }
 
 
@@ -98,7 +101,7 @@ JSValue MyApp::btnDashboard(const JSObject& thisObject, const JSArgs& args) {
     right_pane_->view()->Unfocus();
     setRightPane(overlays_[MyApp::VIEW::DASHBOARD]);
     context_ = right_pane_->view()->LockJSContext();
-    cout << "Dashboard clicked." << endl;
+    
     return JSValue("Dashboard");
 }
 
@@ -112,14 +115,6 @@ JSValue MyApp::btnSearch(const JSObject& thisObject, const JSArgs& args) {
     return JSValue("Search");
 } 
 
-JSValue MyApp::btnFavorites(const JSObject& thisObject, const JSArgs& args) {
-    // load proper view
-    right_pane_->view()->Unfocus();
-    setRightPane(overlays_[MyApp::VIEW::FAVORITES]);
-    context_ = right_pane_->view()->LockJSContext();
-    cout << "Favorites clicked." << endl;
-    return JSValue("Favorites");
-}
 
 JSValue MyApp::btnHelp(const JSObject& thisObject, const JSArgs& args) {
     // load proper view
@@ -157,6 +152,12 @@ JSValue MyApp::sendFileToCpp(const JSObject& thisObject, const JSArgs& args) {
     return JSValue();
 }
 
+void MyApp::OnChangeCursor(ultralight::View* caller, ultralight::Cursor cursor) {
+    if (App::instance()) {
+        window_->SetCursor(cursor);
+    }
+}
+
 void MyApp::appendFav(string term) {
     try {
         string fPath = "favs.json";
@@ -165,32 +166,36 @@ void MyApp::appendFav(string term) {
         // Open the file, create if it does not exist
         outfile.open(fPath, std::ios_base::app);
 
-        std::cerr << "file created..................";
         // Check if the file was opened successfully
         if (!outfile) {
-            std::cerr << "Unable to open file..................";
             return;
         }
+        std::streampos begin, end;
+        begin = outfile.tellp();
+        outfile.seekp(0, std::ios::end);
+        end = outfile.tellp();
+        /*
+        if ((end-begin)<=1) {
+            outfile << "[\n\"searches\"\n]" << endl;
+        }
+        */
         outfile.close();
-        
         // Open the file in read/write mode
         std::ifstream in;
         {
             in.open(fPath, std::ios::binary);
             if (!in.is_open()) {
-                
-
-                // now try again
-                in.clear();
-
-                in.open(fPath, std::ios::binary);
-                if (!in.is_open())
-                    return;
+                return;
             }
         }
+
         // Read the existing JSON data
         string in_data;
-        in >> in_data;
+        string bit;
+        while (!in.eof()) {
+            in >> bit;
+            in_data = in_data + bit;
+        }
         in.close();
         nlohmann::json data;
         if (in_data.size() > 0)
@@ -199,7 +204,7 @@ void MyApp::appendFav(string term) {
         // Convert string to JSON object if possible
         nlohmann::json element_json = nlohmann::json(nullptr);
         try {
-            element_json.parse(term);
+            element_json = element_json.parse("[\"term\", \""+term+"\"]");
         }
         catch (nlohmann::json::exception& e) {
             std::cerr << "Error parsing string as JSON: " << e.what() << std::endl;
@@ -207,8 +212,8 @@ void MyApp::appendFav(string term) {
         }
 
         // do nothing if null;
-        if (element_json.is_null()) {
-            data.push_back(term); // Append as string
+        if (!element_json.is_null()) {
+            data.push_back(element_json); // Append as string
         }
         else
             return;
@@ -235,6 +240,7 @@ void MyApp::Run() {
     app_->Run();
 }
 
+
 // Events
 void MyApp::OnDOMReady(ultralight::View* caller, uint64_t frame_id, bool is_main_frame, const String& url) {
     /// Set our View's JSContext
@@ -244,12 +250,13 @@ void MyApp::OnDOMReady(ultralight::View* caller, uint64_t frame_id, bool is_main
     /// Get the global object (this would be the "window" object in JS)
     JSObject global = JSGlobalObject();
 
+    returnGenreResults = global["returnGenreResults"];
     global["btnDashboard"] = BindJSCallbackWithRetval(&MyApp::btnDashboard);
     global["btnSearch"] = BindJSCallbackWithRetval(&MyApp::btnSearch);
-    global["btnFavorites"] = BindJSCallbackWithRetval(&MyApp::btnFavorites);
     global["btnHelp"] = BindJSCallbackWithRetval(&MyApp::btnHelp);
     
     global["sendFileToCpp"] = BindJSCallback(&MyApp::sendFileToCpp);   // for saving json file
+    global["processGenreSearch"] = BindJSCallbackWithRetval(&MyApp::processGenreSearch);
 }
 
 // called when Window closed.

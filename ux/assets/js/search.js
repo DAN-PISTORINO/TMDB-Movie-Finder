@@ -1,7 +1,7 @@
 const API_KEY = "1857e2cb374e86db84f27a8550dc6e24";
 const POSTER_URL = "http://image.tmdb.org/t/p/w500/";
 const COMPANY_LOGO_URL = "https://image.tmdb.org/t/p/w154/";
-const MOVIE_SEARCH = "https://api.themoviedb.org/3/search/movie?include_adult=false&language=en-US&page=1'"
+const MOVIE_SEARCH = "https://api.themoviedb.org/3/search/movie?query="
 //function sendFileToCpp(filename, movieTitle, searchTerm) { return GetStringFromJS(filename, movieTitle, searchTerm); }
 
 function insertProgBar(prog) {
@@ -13,6 +13,7 @@ async function updateProgBar(percentage) {
     const progressBar = document.querySelector('.progress-bar-filled');
     progressBar.style.width = `${percentage}%`;
 }
+
 async function searchMovies() {
     const searchTerm = txtSearchMovie.value.trim();
     resultsContainer = document.getElementById("resultsContainer");
@@ -20,7 +21,7 @@ async function searchMovies() {
         return;
     }
 
-    const url = "https://api.themoviedb.org/3/search/movie?query=" + searchTerm + "&api_key=" + API_KEY + "&language=en-US&page=";
+    const url = MOVIE_SEARCH + searchTerm + "&api_key=" + API_KEY + "&language=en-US&page=";
     var movies;
     let moviesJson;
     let movieMap;
@@ -71,7 +72,7 @@ async function searchMovies() {
             y = x / 2;
         }, 10);
 
-    } while (Number(responseJson.page, 10) <= Number(responseJson.total_pages, 10))
+    } while (Number(responseJson.page, 10) < Number(responseJson.total_pages, 10))
 
     
     // Display search results

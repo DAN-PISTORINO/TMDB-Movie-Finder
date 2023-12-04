@@ -19,7 +19,7 @@ h3 {
     font-weight: 600;   
 }
 
-#resultsContainer {
+.Container {
     margin-top: 15px;
     text-align: center;
 }
@@ -52,8 +52,19 @@ h3 {
 }
 
 #txtSearchMovie {
+    -webkit-user-select: text !important;
     user-select: auto !important;
-    -webkit-user-select: text !important
+}
+
+#genres {
+    -webkit-user-select: all !important
+    user-select: all !important;
+}
+
+.movie-results{
+    margin-top: 15px;
+    text-align: center;
+    visibility:visible;
 }
 
 .content {
@@ -65,7 +76,7 @@ h3 {
     overflow: auto;
     margin: 5%;
     border-radius: 15px;
-    background: white;
+    background: #000000ab;
     padding: 2em;
     box-shadow: 0 0.5em 1.5em -6px #1f286540;
     transition: top 0.15s ease-out, box-shadow 0.15s ease-out;

@@ -152,7 +152,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>-lc++fs;UltralightCore.lib;AppCore.lib;Ultralight.lib;WebCore.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>UltralightCore.lib;AppCore.lib;Ultralight.lib;WebCore.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>D:/temp/OLD/ult3/ux/../lib;D:/temp/OLD/ult3/ux/../lib/$(Configuration);c:/msys64/mingw64/bin;c:/msys64/mingw64/bin/$(Configuration);c:/msys64/mingw64/lib;c:/msys64/mingw64/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
@@ -234,7 +234,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>-lc++fs;UltralightCore.lib;AppCore.lib;Ultralight.lib;WebCore.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>UltralightCore.lib;AppCore.lib;Ultralight.lib;WebCore.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>D:/temp/OLD/ult3/ux/../lib;D:/temp/OLD/ult3/ux/../lib/$(Configuration);c:/msys64/mingw64/bin;c:/msys64/mingw64/bin/$(Configuration);c:/msys64/mingw64/lib;c:/msys64/mingw64/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
@@ -316,7 +316,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>-lc++fs;UltralightCore.lib;AppCore.lib;Ultralight.lib;WebCore.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>UltralightCore.lib;AppCore.lib;Ultralight.lib;WebCore.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>D:/temp/OLD/ult3/ux/../lib;D:/temp/OLD/ult3/ux/../lib/$(Configuration);c:/msys64/mingw64/bin;c:/msys64/mingw64/bin/$(Configuration);c:/msys64/mingw64/lib;c:/msys64/mingw64/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
@@ -397,7 +397,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>-lc++fs;UltralightCore.lib;AppCore.lib;Ultralight.lib;WebCore.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>UltralightCore.lib;AppCore.lib;Ultralight.lib;WebCore.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>D:/temp/OLD/ult3/ux/../lib;D:/temp/OLD/ult3/ux/../lib/$(Configuration);c:/msys64/mingw64/bin;c:/msys64/mingw64/bin/$(Configuration);c:/msys64/mingw64/lib;c:/msys64/mingw64/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>

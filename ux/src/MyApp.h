@@ -24,13 +24,12 @@ struct StringResult {
 };
 
 class MyApp : public WindowListener, public ViewListener, public LoadListener {
-    enum VIEW { SIDEBAR, DASHBOARD, SEARCH, FAVORITES, HELP};  
+    enum VIEW { SIDEBAR, DASHBOARD, SEARCH, HELP};  
 
     const struct VIEW_URL {
         ultralight::String SIDEBAR = "file:///sidebar.html";
         ultralight::String DASHBOARD = "file:///stats.html";
         ultralight::String SEARCH = "file:///search.html";
-        ultralight::String FAVORITES = "file:///favorites.html";
         ultralight::String HELP = "file:///help.html";
     } VIEW_URLS;
 
@@ -79,14 +78,15 @@ public:
     virtual void OnDOMReady(ultralight::View* caller, uint64_t frame_id, bool is_main_frame, const String& url);
 
     // Javascript functions
-    JSFunction updateMovieSearch;
+    //JSFunction updateMovieSearch;
+    JSFunction returnGenreResults;
 
     // Sidebar functions
     JSValue btnDashboard(const JSObject& thisObject, const JSArgs& args);
     JSValue btnSearch(const JSObject& thisObject, const JSArgs& args);
-    JSValue btnFavorites(const JSObject& thisObject, const JSArgs& args);
     JSValue btnHelp(const JSObject& thisObject, const JSArgs& args);
 
     // Search
     JSValue sendFileToCpp(const JSObject& thisObject, const JSArgs& args);
+    JSValue processGenreSearch(const JSObject& thisObject, const JSArgs& args);
 };

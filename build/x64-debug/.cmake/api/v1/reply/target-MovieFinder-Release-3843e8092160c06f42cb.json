@@ -163,11 +163,6 @@
 			},
 			{
 				"backtrace" : 1,
-				"fragment" : "-lc++fs",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 1,
 				"fragment" : "UltralightCore.lib",
 				"role" : "libraries"
 			},
