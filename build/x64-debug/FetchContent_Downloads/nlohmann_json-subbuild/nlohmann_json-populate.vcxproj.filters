@@ -1,44 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeFiles\228bd1021ab287e88fb6d8a1936245b0\nlohmann_json-populate-mkdir.rule">
+    <CustomBuild Include="D:\temp\OLD\ult3 - Copy\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeFiles\e98ba8ab41eb37f6b96721db241dcc71\nlohmann_json-populate-mkdir.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeFiles\228bd1021ab287e88fb6d8a1936245b0\nlohmann_json-populate-download.rule">
+    <CustomBuild Include="D:\temp\OLD\ult3 - Copy\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeFiles\e98ba8ab41eb37f6b96721db241dcc71\nlohmann_json-populate-download.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeFiles\228bd1021ab287e88fb6d8a1936245b0\nlohmann_json-populate-update.rule">
+    <CustomBuild Include="D:\temp\OLD\ult3 - Copy\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeFiles\e98ba8ab41eb37f6b96721db241dcc71\nlohmann_json-populate-update.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeFiles\228bd1021ab287e88fb6d8a1936245b0\nlohmann_json-populate-patch.rule">
+    <CustomBuild Include="D:\temp\OLD\ult3 - Copy\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeFiles\e98ba8ab41eb37f6b96721db241dcc71\nlohmann_json-populate-patch.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeFiles\228bd1021ab287e88fb6d8a1936245b0\nlohmann_json-populate-configure.rule">
+    <CustomBuild Include="D:\temp\OLD\ult3 - Copy\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeFiles\e98ba8ab41eb37f6b96721db241dcc71\nlohmann_json-populate-configure.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeFiles\228bd1021ab287e88fb6d8a1936245b0\nlohmann_json-populate-build.rule">
+    <CustomBuild Include="D:\temp\OLD\ult3 - Copy\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeFiles\e98ba8ab41eb37f6b96721db241dcc71\nlohmann_json-populate-build.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeFiles\228bd1021ab287e88fb6d8a1936245b0\nlohmann_json-populate-install.rule">
+    <CustomBuild Include="D:\temp\OLD\ult3 - Copy\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeFiles\e98ba8ab41eb37f6b96721db241dcc71\nlohmann_json-populate-install.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeFiles\228bd1021ab287e88fb6d8a1936245b0\nlohmann_json-populate-test.rule">
+    <CustomBuild Include="D:\temp\OLD\ult3 - Copy\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeFiles\e98ba8ab41eb37f6b96721db241dcc71\nlohmann_json-populate-test.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeFiles\930c699584849d92cdd24b9f0b5a38e0\nlohmann_json-populate-complete.rule">
+    <CustomBuild Include="D:\temp\OLD\ult3 - Copy\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeFiles\4b411aef8323418234a7ceae3011abcf\nlohmann_json-populate-complete.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeFiles\8cb88ea9033a52e0f4c5b893562a4c57\nlohmann_json-populate.rule">
+    <CustomBuild Include="D:\temp\OLD\ult3 - Copy\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeFiles\acf8838a38977ddc916d97a05d73b5ed\nlohmann_json-populate.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeLists.txt" />
+    <CustomBuild Include="D:\temp\OLD\ult3 - Copy\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="D:\temp\OLD\ult3\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeFiles\nlohmann_json-populate" />
+    <None Include="D:\temp\OLD\ult3 - Copy\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeFiles\nlohmann_json-populate" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{2853FCFF-F025-32C6-B78E-7C767A6F6063}</UniqueIdentifier>
+      <UniqueIdentifier>{F5D5A88F-A9C8-3739-BC63-B23277F244A9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

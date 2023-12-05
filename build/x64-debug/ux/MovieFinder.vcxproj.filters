@@ -1,42 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\temp\OLD\ult3\ux\main.cpp">
+    <ClCompile Include="D:\temp\OLD\ult3 - Copy\ux\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\temp\OLD\ult3\ux\src\MyApp.cpp">
+    <ClCompile Include="D:\temp\OLD\ult3 - Copy\ux\src\MyApp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\temp\OLD\ult3\ux\src\MovieLib.cpp">
+    <ClCompile Include="D:\temp\OLD\ult3 - Copy\ux\src\RedBlackTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\temp\OLD\ult3 - Copy\ux\src\SplayTree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\temp\OLD\ult3\ux\src\MyApp.h">
+    <ClInclude Include="D:\temp\OLD\ult3 - Copy\ux\src\MyApp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\temp\OLD\ult3\ux\src\Movie.hpp">
+    <ClInclude Include="D:\temp\OLD\ult3 - Copy\ux\src\RedBlackTree.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\temp\OLD\ult3\ux\src\JSSerial.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="D:\temp\OLD\ult3\ux\src\MovieLib.h">
+    <ClInclude Include="D:\temp\OLD\ult3 - Copy\ux\src\SplayTree.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\temp\OLD\ult3\ux\CMakeLists.txt" />
+    <CustomBuild Include="D:\temp\OLD\ult3 - Copy\ux\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Natvis Include="D:\temp\OLD\ult3\build\x64-debug\FetchContent_Downloads\nlohmann_json-src\nlohmann_json.natvis" />
+    <Natvis Include="D:\temp\OLD\ult3 - Copy\build\x64-debug\FetchContent_Downloads\nlohmann_json-src\nlohmann_json.natvis" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{D599EA66-B50C-3062-BCA5-E83253B813DC}</UniqueIdentifier>
+      <UniqueIdentifier>{AD5E5253-95D6-3428-A09C-DE97099EE321}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{65AF4F97-C8AF-345F-8F38-2BC31112A3C8}</UniqueIdentifier>
+      <UniqueIdentifier>{9AFA354D-1905-306A-B44D-DC59E84C8FEA}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -8,9 +8,19 @@
 #include <map>
 #include <nlohmann/json.hpp>
 #include <fstream>
+#include <iostream>
 #include <filesystem>
+#include <chrono>
+#include "SplayTree.hpp"
+#include "RedBlackTree.hpp"
+
+#define CLK_NOW chrono::steady_clock::now();
 
 using namespace ultralight;
+using namespace std::chrono;
+
+using json = nlohmann::json;
+
 using std::string;
 using std::map;
 
@@ -44,6 +54,13 @@ class MyApp : public WindowListener, public ViewListener, public LoadListener {
     string dbAuthKey;
     int width_, height_;
     RefPtr<JSContext> context_;
+    
+    // analysis
+    string time_diff(chrono::steady_clock::time_point start, chrono::steady_clock::time_point stop);
+    string movies_to_str(vector<Node_Sp*>& movies);
+    string duration_str(string tag, string time);
+    string ansis(string user_genre);
+
 
 public:
     MyApp();

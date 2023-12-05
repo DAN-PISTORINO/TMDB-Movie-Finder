@@ -6,25 +6,21 @@
 #include <vector>
 #include <stack>
 #include <queue>
-#include "Movie.hpp"
 
 
 using namespace std;
 
-struct Node {
+struct RB_Node {
     int year;
     string movie;
-    string actor;
     string category;
-    Node* left;
-    Node* right;
-    Node* parent;
+    string movieID;
+    RB_Node* left;
+    RB_Node* right;
+    RB_Node* parent;
     bool isRed;
-    Node(int year, string movie, string actor, string category) :
-        year(year), movie(movie), actor(actor), category(category),
-        isRed(true), left(nullptr), right(nullptr), parent(nullptr) 
-        {;}
-    ~Node() {
+    RB_Node(int year, string movie, string category, string movieID) : year(year), movie(movie), category(category), movieID(movieID),isRed(true),left(nullptr), right(nullptr), parent(nullptr){}
+    ~RB_Node() {
         left = nullptr;
         right = nullptr;
         delete left;
@@ -33,17 +29,17 @@ struct Node {
 };
 
 class RedBlackTree{
-    Node* root = nullptr;
-    Node* insertHelper(Node* &head, int &year, string &movie, string &actor, string &category);
-    Node* removeHelper(Node* &head, int &year, string &movie, string &actor, string &category);
-    void balance_tree(Node* &head);
-    void leftRotate(Node* &head);
-    void rightRotate(Node* &head);
-    void balanceTree(Node* &head); 
-    Node* findSuccessor(Node* node);
-    void searchHelper(Node* head, vector<string> &movies, string &category);
-public:
-    void insert(int &year, string &movie, string &actor, string &category);
-    void removeNode(int &year, string &movie, string &actor, string &category);
-    void search(vector<string> &movies, string &category);
+        RB_Node* root = nullptr;
+        RB_Node* insertHelper(RB_Node* &head, int &year, string &movie, string &category, string &movieID);
+        RB_Node* removeHelper(RB_Node* &head, int &year, string &movie, string &category, string &movieID);
+        RB_Node* balance_tree(RB_Node* &head);
+        void leftRotate(RB_Node* &head);
+        void rightRotate(RB_Node* &head);
+        void balanceTree(RB_Node* &head);
+        RB_Node* findSuccessor(RB_Node* node);
+        void searchHelper(RB_Node* head, vector<RB_Node*> &movies, string &category);
+    public:
+        void insert(int &year, string &movie, string &category, string &movieID);
+        void removeNode(int &year, string &movie, string &category, string &movieID);
+        void search(vector<RB_Node*> &movies, string &category);
 };

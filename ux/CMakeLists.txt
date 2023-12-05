@@ -35,14 +35,10 @@ link_libraries(nlohmann_json nlohmann_json::nlohmann_json)
 
 set(SOURCES "src/MyApp.h"
             "src/MyApp.cpp"
-            "src/Movie.hpp"
-            "src/JSSerial.hpp"
-            "src/MovieLib.h"
-            "src/MovieLib.cpp"
-            #"src/RedBlackTree.cpp"
-            #"src/RedBlackTree.hpp"
-            #"src/SplayTree.hpp"
-            #"src/SplayTree.cpp"
+            "src/RedBlackTree.cpp"
+            "src/RedBlackTree.hpp"
+            "src/SplayTree.hpp"
+            "src/SplayTree.cpp"
 )
 
 # Includes

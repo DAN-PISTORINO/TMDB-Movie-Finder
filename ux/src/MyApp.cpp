@@ -1,11 +1,9 @@
 #include "MyApp.h"
-#include <iostream>
 
 #define debug
 
-    #define DOUT( s ) { \
-        cout<<s<<endl;    \
-    }
+#define DOUT( s ) { \
+    cout<<s<<endl;}
 
 #ifdef debug
     
@@ -19,10 +17,17 @@ static MyApp* g_ui = nullptr;
 
 // returns json string of movies
 JSValue MyApp::processGenreSearch(const JSObject& thisObject, const JSArgs& args) {
-    string jString = "[{\"id\": 116776, \"title\" : \"Dragon Ball: Mystical Adventure\", \"overview\" : \"Master Roshi and power from the royal.\", \"release_date\" : \"1988-07-09\", \"popularity\" : 340.423, \"vote_average\" : 6.756, \"poster_path\" : \"/5aXG0B3TYTpQsodXzvYCkKQfpB1.jpg\", \"backdrop_path\" : null}]";
-    JSArgs jsonJSString = JSArgs({jString.c_str()});
-    returnGenreResults(jsonJSString); // getGenreMovies();
-    return JSValue(jString.c_str());
+    String jString = args[0];
+    char* cString = jString.utf8().data();
+    string genreString = string(cString);
+
+    string genreMoviesJson = ansis(genreString); 
+
+    JSValue out(genreMoviesJson.c_str());
+
+    returnGenreResults(JSArgs({out}));
+
+    return JSValue(out);
 }
 
 
@@ -41,7 +46,6 @@ MyApp::MyApp() {
     overlays_.insert(make_pair(VIEW::SIDEBAR, Overlay::Create(window_.get(), 100, 100, 0, 0)));
     overlays_.insert(make_pair(VIEW::DASHBOARD, Overlay::Create(window_.get(), 100, 100, 0, 0)));
     overlays_.insert(make_pair(VIEW::SEARCH, Overlay::Create(window_.get(), 100, 100, 0, 0)));
-
     overlays_.insert(make_pair(VIEW::HELP, Overlay::Create(window_.get(), 100, 100, 0, 0)));
 
 
@@ -346,4 +350,148 @@ string MyApp::readFile(string filename) {
     }
     ifile.close();
     return file;
+}
+
+
+
+// analysis
+
+string MyApp::time_diff(chrono::steady_clock::time_point start, chrono::steady_clock::time_point stop) {
+    return to_string(duration_cast<chrono::microseconds>(stop - start).count());
+}
+
+string MyApp::movies_to_str(vector<Node_Sp*>& movies) {
+    string result;
+    result += "movies: [\n";
+    for (int i = 0; i < movies.size() - 1; i++) {
+        result += "{\n";
+        result += R"(movieID: ")" + movies[i]->movieID + "\",\n";
+        result += R"(title: ")" + movies[i]->movie + "\"";
+        result += "\n},\n";
+    }
+
+    result += "{";
+    result += R"(movieID: ")" + movies[movies.size() - 1]->movieID + "\",\n";
+    result += R"(title: ")" + movies[movies.size() - 1]->movie + "\"";
+    result += "}\n";
+    result += "}\n],\n";
+
+    return result;
+}
+
+string MyApp::duration_str(string tag, string time) {
+    string final;
+    final += " " + tag + ": " + time + ", ";
+    return final;
+}
+
+string MyApp::ansis(string user_genre) {
+    auto start = chrono::steady_clock::now();
+
+    std::ifstream f("./assets/data/movie_data.json");
+    SplayTree movie_tree_sp;
+    RedBlackTree movie_tree_rb;
+
+    string line;
+    json movie_data = json::parse(f);
+
+    // splay build
+
+    auto build_start_sp = CLK_NOW;
+    for (auto& i : movie_data) {
+        string mv_title = i["primaryTitle"];
+        string mv_id = i["tconst"];
+
+        string year;
+        year = i["startYear"];
+        int mv_year = 0;
+        if (year == (R"(\\N)") || year == (R"(\N)")) {
+            mv_year = -1;
+        }
+        else {
+            mv_year = stoi(year);
+        }
+        string mv_genres = i["genres"];
+        string mv_category;
+        if (mv_genres == (R"(\\N)") || mv_genres == (R"(\N)")) {
+            mv_category = "";
+        }
+        else if (mv_genres.find(',') != string::npos) {
+            mv_category = mv_genres.substr(0, mv_genres.find(','));
+        }
+        else {
+            mv_category = mv_genres;
+        }
+
+        movie_tree_sp.insert(mv_year, mv_title, mv_category, mv_id);
+    }
+    auto build_end_sp = CLK_NOW;
+    string build_time_sp = time_diff(build_start_sp, build_end_sp);
+
+    // rb build
+    auto build_start_rb = CLK_NOW;
+    for (auto& i : movie_data) {
+        string mv_title = i["primaryTitle"];
+        string mv_id = i["tconst"];
+
+        string year;
+        year = i["startYear"];
+        int mv_year = 0;
+        if (year == (R"(\\N)") || year == (R"(\N)")) {
+            mv_year = -1;
+        }
+        else {
+            mv_year = stoi(year);
+        }
+
+        string mv_genres = i["genres"];
+        string mv_category;
+        if (mv_genres == (R"(\\N)") || mv_genres == (R"(\N)")) {
+            mv_category = "";
+        }
+        else if (mv_genres.find(',') != string::npos) {
+            mv_category = mv_genres.substr(0, mv_genres.find(','));
+        }
+        else {
+            mv_category = mv_genres;
+        }
+
+        movie_tree_rb.insert(mv_year, mv_title, mv_category, mv_id);
+    }
+    auto build_end_rb = CLK_NOW;
+    string build_time_rb = time_diff(build_start_rb, build_end_rb);
+
+    vector<Node_Sp*> result_movies_sp;
+    vector<RB_Node*> result_movies_rb;
+
+    // splay search
+    auto search_start_sp = CLK_NOW;
+    movie_tree_sp.search(result_movies_sp, user_genre);
+    auto search_end_sp = CLK_NOW;
+    string search_time_sp = time_diff(search_start_sp, search_end_sp);
+
+    // rb search
+    auto search_start_rb = CLK_NOW;
+    movie_tree_rb.search(result_movies_rb, user_genre);
+    auto search_end_rb = CLK_NOW;
+    string search_time_rb = time_diff(search_start_rb, search_end_rb);
+
+    // json conversions
+    string movies_json = movies_to_str(result_movies_sp);
+    string movie_html = "movies: [ ";
+    for (auto m : result_movies_rb) {
+        movie_html = movie_html + "{ tconst: " + m->movieID + "}, ";
+    }
+    movie_html = movie_html + " ] ";
+    string total_results = "total_results: " + to_string(result_movies_rb.size()) + ", ";
+    string search_time_rb_json = duration_str("search_time_rb", search_time_rb);
+    string search_time_sp_json = duration_str("search_time_sp", search_time_sp);
+    string build_time_rb_json = duration_str("build_time_rb", build_time_rb);
+    string build_time_sp_json = duration_str("build_time_sp", build_time_sp);
+
+    string json_string = "\'{ "  + total_results + build_time_rb_json + build_time_sp_json +
+                                search_time_rb_json + search_time_sp_json +
+                                movie_html + " }\'";
+
+    return json_string;
 }

@@ -13,7 +13,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{48B8E896-085E-3D93-BF2F-52DA09A36074}</ProjectGuid>
+    <ProjectGuid>{B1EE07B2-4854-311E-9B03-DB94BA0C3DEB}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -48,11 +48,11 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\temp\OLD\ult3\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeLists.txt">
+    <CustomBuild Include="D:\temp\OLD\ult3 - Copy\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/temp/OLD/ult3/build/x64-debug/FetchContent_Downloads/nlohmann_json-subbuild/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/temp/OLD/ult3 - Copy/build/x64-debug/FetchContent_Downloads/nlohmann_json-subbuild/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-C:\msys64\mingw64\bin\cmake.exe -SD:/temp/OLD/ult3/build/x64-debug/FetchContent_Downloads/nlohmann_json-subbuild -BD:/temp/OLD/ult3/build/x64-debug/FetchContent_Downloads/nlohmann_json-subbuild --check-stamp-file D:/temp/OLD/ult3/build/x64-debug/FetchContent_Downloads/nlohmann_json-subbuild/CMakeFiles/generate.stamp
+C:\msys64\mingw64\bin\cmake.exe "-SD:/temp/OLD/ult3 - Copy/build/x64-debug/FetchContent_Downloads/nlohmann_json-subbuild" "-BD:/temp/OLD/ult3 - Copy/build/x64-debug/FetchContent_Downloads/nlohmann_json-subbuild" --check-stamp-file "D:/temp/OLD/ult3 - Copy/build/x64-debug/FetchContent_Downloads/nlohmann_json-subbuild/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -60,22 +60,22 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\msys64\mingw64\share\cmake\Modules\CMakeGenericSystem.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeInitializeConfigs.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInitialize.cmake;C:\msys64\mingw64\share\cmake\Modules\ExternalProject.cmake;C:\msys64\mingw64\share\cmake\Modules\ExternalProject\PatchInfo.txt.in;C:\msys64\mingw64\share\cmake\Modules\ExternalProject\RepositoryInfo.txt.in;C:\msys64\mingw64\share\cmake\Modules\ExternalProject\UpdateInfo.txt.in;C:\msys64\mingw64\share\cmake\Modules\ExternalProject\cfgcmd.txt.in;C:\msys64\mingw64\share\cmake\Modules\ExternalProject\gitclone.cmake.in;C:\msys64\mingw64\share\cmake\Modules\ExternalProject\gitupdate.cmake.in;C:\msys64\mingw64\share\cmake\Modules\ExternalProject\mkdirs.cmake.in;C:\msys64\mingw64\share\cmake\Modules\ExternalProject\shared_internal_commands.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows-Initialize.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\WindowsPaths.cmake;D:\temp\OLD\ult3\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeFiles\3.27.8\CMakeSystem.cmake;D:\temp\OLD\ult3\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\nlohmann_json-populate-prefix\tmp\nlohmann_json-populate-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\temp\OLD\ult3\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\msys64\mingw64\share\cmake\Modules\CMakeGenericSystem.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeInitializeConfigs.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInitialize.cmake;C:\msys64\mingw64\share\cmake\Modules\ExternalProject.cmake;C:\msys64\mingw64\share\cmake\Modules\ExternalProject\PatchInfo.txt.in;C:\msys64\mingw64\share\cmake\Modules\ExternalProject\RepositoryInfo.txt.in;C:\msys64\mingw64\share\cmake\Modules\ExternalProject\UpdateInfo.txt.in;C:\msys64\mingw64\share\cmake\Modules\ExternalProject\cfgcmd.txt.in;C:\msys64\mingw64\share\cmake\Modules\ExternalProject\gitclone.cmake.in;C:\msys64\mingw64\share\cmake\Modules\ExternalProject\gitupdate.cmake.in;C:\msys64\mingw64\share\cmake\Modules\ExternalProject\mkdirs.cmake.in;C:\msys64\mingw64\share\cmake\Modules\ExternalProject\shared_internal_commands.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows-Initialize.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\WindowsPaths.cmake;D:\temp\OLD\ult3 - Copy\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeFiles\3.27.8\CMakeSystem.cmake;D:\temp\OLD\ult3 - Copy\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\nlohmann_json-populate-prefix\tmp\nlohmann_json-populate-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\temp\OLD\ult3 - Copy\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\ZERO_CHECK.vcxproj">
-      <Project>{DE1AF5F5-C17B-3ECD-BC84-B3A1EE9A1795}</Project>
+    <ProjectReference Include="D:\temp\OLD\ult3 - Copy\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\ZERO_CHECK.vcxproj">
+      <Project>{32EBB481-25F7-3A32-B0DA-8167FBD76DED}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="D:\temp\OLD\ult3\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\nlohmann_json-populate.vcxproj">
-      <Project>{684C9364-2EBD-3935-B1B0-4AE7D892523A}</Project>
+    <ProjectReference Include="D:\temp\OLD\ult3 - Copy\build\x64-debug\FetchContent_Downloads\nlohmann_json-subbuild\nlohmann_json-populate.vcxproj">
+      <Project>{E596B301-6F9D-375A-BC48-A5C7D5DDAB0B}</Project>
       <Name>nlohmann_json-populate</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

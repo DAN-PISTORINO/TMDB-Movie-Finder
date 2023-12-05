@@ -1,8 +1,8 @@
-# Install script for directory: D:/temp/OLD/ult3
+# Install script for directory: D:/temp/OLD/ult3 - Copy
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "D:/temp/OLD/ult3/build/install/x64-debug")
+  set(CMAKE_INSTALL_PREFIX "D:/temp/OLD/ult3 - Copy/build/install/x64-debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,12 +34,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/temp/OLD/ult3/build/x64-debug/FetchContent_Downloads/nlohmann_json-build/cmake_install.cmake")
+  include("D:/temp/OLD/ult3 - Copy/build/x64-debug/FetchContent_Downloads/nlohmann_json-build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/temp/OLD/ult3/build/x64-debug/ux/cmake_install.cmake")
+  include("D:/temp/OLD/ult3 - Copy/build/x64-debug/ux/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/temp/OLD/ult3/build/x64-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/temp/OLD/ult3 - Copy/build/x64-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

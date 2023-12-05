@@ -1,25 +1,26 @@
 #include "SplayTree.hpp"
 
 
-void SplayTree::insert(int &year, string &movie, string &actor, string &category) {
-    this->root = insertHelper(this->root, year, movie, actor, category);
+void SplayTree::insert(int &year, string &movie, string &category, string &movieID) {
+    this->root = insertHelper(this->root, year, movie, category, movieID);
 }
 
-//Insert nodes into the tree by category
-Node* SplayTree::insertHelper(Node* &head, int &year, string &movie, string &actor, string &category) {
+//O(n)
+//Insert nodes into the tree by movieID
+Node_Sp* SplayTree::insertHelper(Node_Sp* &head, int &year, string &movie, string &category, string &movieID) {
     if (head == nullptr) {
-        return new Node(year, movie, actor, category);
+        return new Node_Sp(year, movie, category, movieID);
     }
 
-    head = splay(root, movie);
+    head = splay(root, movieID);
 
-    if (head->movie == movie) {
+    if (head->movieID == movieID) {
         return root;
     }
 
-    Node* newnode = new Node(year, movie, actor, category);
+    Node_Sp* newnode = new Node_Sp(year, movie, category, movieID);
 
-    if (head->movie > movie) {
+    if (head->movieID > movieID) {
         newnode->right = root;
         newnode->left = root->left;
         root->left = nullptr;
@@ -33,38 +34,41 @@ Node* SplayTree::insertHelper(Node* &head, int &year, string &movie, string &act
     return newnode;
 }
 
-Node* SplayTree::rightRotate(Node* &head) {
-    Node* newhead = head->left;
+//O(1) 
+Node_Sp* SplayTree::rightRotate(Node_Sp* &head) {
+    Node_Sp* newhead = head->left;
     head->left = newhead->right;
     newhead->right = head;
     return newhead;
 }
 
-Node* SplayTree::leftRotate(Node* &head) {
-    Node* newhead = head->right;
+//O(1) 
+Node_Sp* SplayTree::leftRotate(Node_Sp* &head) {
+    Node_Sp* newhead = head->right;
     head->right = newhead->left;
     newhead->left = head;
     return newhead;
 }
 
-Node* SplayTree::splay(Node* &head, string &movie) {
-    //If we found a movie with the category we are looking for or the tree is empty return the head
-    if (head == nullptr || head->movie == movie) {
+//O(n)
+Node_Sp* SplayTree::splay(Node_Sp* &head, string &movieID) {
+    //If we found a movie with the ID we are looking for or the tree is empty return the head
+    if (head == nullptr || head->movieID == movieID) {
         return head;
     }
 
-    //If there is a movie with the category we are looking for in the left subtree
-    if (movie < head->movie) {
+    //If there is a movie with the ID we are looking for in the left subtree
+    if (movieID < head->movieID) {
         if (head->left == nullptr) 
             return head;
     
-        if (movie < head->left->movie) {
-            head->left->left = splay(head->left->left, movie);
+        if (movieID < head->left->movieID) {
+            head->left->left = splay(head->left->left, movieID);
             head = rightRotate(head);
         } 
 
-        else if (movie > head->left->movie) {
-            head->left->right = splay(head->left->right, movie);
+        else if (movieID > head->left->movieID) {
+            head->left->right = splay(head->left->right, movieID);
             if (head->left->right != nullptr) 
                 head->left = leftRotate(head->left);   
         }
@@ -72,74 +76,73 @@ Node* SplayTree::splay(Node* &head, string &movie) {
         return (head->left == nullptr) ? head : rightRotate(head);
 
     } 
-    //If the movie with the category we are looking for is in the right subtree 
+    //If the movie with the ID we are looking for is in the right subtree 
     else {
         if (head->right == nullptr) 
             return head;
 
-        if (movie < head->right->movie) {
-            head->right->left = splay(head->right->left, movie);
+        if (movieID < head->right->movieID) {
+            head->right->left = splay(head->right->left, movieID);
             if (head->right->left != nullptr) 
                 head->right = rightRotate(head->right);
         }
 
-        else if (movie > head->right->movie) {
-            head->right->right = splay(head->right->right, movie);
+        else if (movieID > head->right->movieID) {
+            head->right->right = splay(head->right->right, movieID);
             head = leftRotate(head);
         }
 
         return (head->right == nullptr) ? head : leftRotate(head);
     }
 }
+//O(n)
+//This function will iterate through the tree and find all the movies with the same category
+ void SplayTree::search(vector<Node_Sp*>& movies, string &category) {
+    queue<Node_Sp*> similarMovies;
+    similarMovies.push(this->root);
+    int x = 0;
+    //searchHelper(this->root, movies, category);
+    while (!similarMovies.empty()) {
+        Node_Sp* temp = similarMovies.front();
+        similarMovies.pop();
+        if (temp->category == category) {
+            movies.push_back(temp);
+        }
+        if (temp->left != nullptr) {
+            similarMovies.push(temp->left);
+        }
+        if (temp->right != nullptr) {
+            similarMovies.push(temp->right);
+        }
 
- void SplayTree::search(vector<string>& movies, string &category) {
-    //Splay the tree to put a movie with the category we are looking for at the top
-    this->root = splay(this->root, category);
-
-    Node* current = this->root;
-
-    //Check the left subtree for movies with the category
-    while (current != nullptr) {
-        if (current->category == category) 
-            movies.push_back(current->movie);
-
-        current = current->left;
+        x++;
     }
 
-    // Reset to the root to check the right subtree
-    this->root = splay(this->root, category);
-    current = this->root->right;
-
-    //Check the right subtree for movies with the category
-    while (current != nullptr) {
-        if (current->category == category) 
-            movies.push_back(current->movie);
-        
-        current = current->right;
-    }
 }
 
 //Funcion to remove a node from the tree
-void SplayTree::removeNode(int &year, string &movie, string &actor, string &category) {
-    this->root = removeHelper(this->root, year, movie, actor, category);
+void SplayTree::removeNode(string &movieID) {
+    this->root = removeHelper(this->root, movieID);
 }
 
-Node* SplayTree::removeHelper(Node* &head, int &year, string &movie, string &actor, string &category) {
+//O(n)
+//Function to remove a node from the tree
+Node_Sp* SplayTree::removeHelper(Node_Sp* &head, string &movieID) {
     //If theres no node passed
     if (head == nullptr) {
         return nullptr;
     }
 
     //Bring the node we are looking for to the top
-    head = splay(root, movie);
+    head = splay(root, movieID);
 
     //If the node does not exist, just ignore it
-    if (head->movie != movie) {
+    if (head->movieID != movieID) {
         return head; // Node not found
     }
 
     //If the node exists, delete it
-    Node* temp;
+    Node_Sp* temp;
     if (head->left == nullptr) {
         temp = head->right;
         delete head;
@@ -147,9 +150,11 @@ Node* SplayTree::removeHelper(Node* &head, int &year, string &movie, string &act
     }
     else {
         temp = head;
-        head = splay(head->left, movie);
+        head = splay(head->left, movieID);
         head->right = temp->right;
         delete temp;
         return head;
     }
 }
+
+

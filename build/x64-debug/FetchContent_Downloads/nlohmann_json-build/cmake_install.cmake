@@ -1,8 +1,8 @@
-# Install script for directory: D:/temp/OLD/ult3/build/x64-debug/FetchContent_Downloads/nlohmann_json-src
+# Install script for directory: D:/temp/OLD/ult3 - Copy/build/x64-debug/FetchContent_Downloads/nlohmann_json-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "D:/temp/OLD/ult3/build/install/x64-debug")
+  set(CMAKE_INSTALL_PREFIX "D:/temp/OLD/ult3 - Copy/build/install/x64-debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
